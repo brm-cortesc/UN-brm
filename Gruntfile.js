@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 					 options: {
 							 pretty: true,
 							 data:{
-							 	debug: true //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
+							 	debug: false //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
 							 }
 					 },
 					 files: [ {
