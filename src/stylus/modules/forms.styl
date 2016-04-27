@@ -1,0 +1,111 @@
+#registro
+	background-color #fff
+	margin-bottom 10rem
+	margin-top 2rem
+	padding 2rem 1rem
+	
+	h3
+		color $Azul
+		font-size 1.8rem
+		font-weight $Normal
+		text-align center
+		
+
+	img
+		margin 0.5rem auto
+		
+	.mensaje
+		color darken(#f00, 40%)
+		
+
+input, select
+	&::-webkit-input-placeholder
+		color #fff !important
+	&::-moz-placeholder
+		color #fff !important 
+	&:-ms-input-placeholder
+		color #fff !important 
+	&:-moz-placeholder
+		color #fff !important
+		
+	&:active, &:focus
+		&::-webkit-input-placeholder
+			color #738b94 !important
+		&::-moz-placeholder
+			color #738b94 !important 
+		&:-ms-input-placeholder
+			color #738b94 !important 
+		&:-moz-placeholder
+			color #738b94 !important
+		
+		
+.checkbox				
+	label
+		cursor pointer
+		display inline-block
+		font-weight $Normal
+		padding-left 2rem
+		position relative
+		z-index 1
+		
+		&:before
+			color $Azul
+			content "\e157"
+			display inline-block
+			font-family $Icon
+			left 0
+			position absolute
+			
+		a
+			position relative
+			z-index 3
+			
+	input
+		cursor pointer
+		left 2rem
+		opacity 0
+		width 100%
+		z-index 0
+		
+		&[type="checkbox"]:checked + label:before
+			content "\e067"
+			
+
+select.form-control
+	color #fff !important
+	cursor pointer
+	padding 0 !important
+	
+	option 
+		color #738b94
+
+.form
+	&-control
+		background-color #738b94
+		border-color transparent 
+		border-radius 5px !important
+		box-shadow none !important
+		color $Azul
+		transitionBase(0.3s)
+		z-index 1
+		
+		&:focus
+			background-color $Azul
+			border 1px solid #738b94
+			color #fff
+			box-shadow none !important
+			outline 0 !important
+			outline none !important
+			
+	&-group
+		margin-top 2rem
+		position relative
+		
+		// label
+		// 	color #fff
+		// 	left 2%
+		// 	position absolute
+		// 	top 25%
+		// 	transitionBase(0.3s)
+		// 	z-index 2
+			

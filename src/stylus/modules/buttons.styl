@@ -1,0 +1,25 @@
+.btn
+	background-color $Azul
+	color #fff
+	display block
+	font-size 1.8rem
+	margin 1rem auto
+	padding 1rem 
+	text-transform uppercase
+	transitionBase(0.3s)
+	
+	&:active, &:focus
+		transform scale(0.95)
+		
+
+	&:hover
+		background-color lighten($Azul, 30%)
+		color #fff
+		
+
+	&-conoce
+		max-width 23rem
+
+	&-submit
+		margin-top 2rem
+		width 100%

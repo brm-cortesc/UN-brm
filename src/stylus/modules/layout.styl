@@ -1,0 +1,12 @@
+.row
+	margin 0 auto
+	max-width 124rem
+	position relative
+	
+
+	for x in (1..12)
+	
+		.col-lg-{x}, .col-md-{x}, .col-sm-{x}, .col-xs-{x}
+			padding-left 5px
+			padding-right @padding-left
+			transitionBase(0.3s)
