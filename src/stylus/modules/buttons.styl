@@ -3,7 +3,7 @@
 	color #fff
 	display block
 	font-size 1.8rem
-	margin 1rem auto
+	margin 1rem auto 0
 	padding 1rem 
 	text-transform uppercase
 	transitionBase(0.3s)
@@ -16,8 +16,17 @@
 		background-color lighten($Azul, 30%)
 		color #fff
 		
-
+	&-cambio
+		text-transform initial
+		max-width 23rem
+		
 	&-conoce
+		background-color #fff
+		border 2px solid $Peach
+		color darken($Azul, 40%)
+		font-size 1.9rem
+		font-weight $Bold
+		margin-top 2rem
 		max-width 23rem
 
 	&-submit
