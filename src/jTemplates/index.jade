@@ -8,7 +8,7 @@ block content
 	section.container-fluid.container-pasos
 		article.row
 			
-			div.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-lg-offset-3.col-md-offset-3.col-sm-offset-3
+			div.col-lg-6.col-md-6.col-sm-8.col-xs-10.col-lg-offset-3.col-md-offset-3.col-sm-offset-2
 
 				h1.copy-ppal #JugadorRexona
 
@@ -24,7 +24,7 @@ block content
 
 				a.terminos(href="#"): small Términos y condiciones del concurso.
 
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-2.col-lg-offset-1.col-md-offset-1
 
 				img.img-responsive.motion(src="images/motion-sense.png", alt="Rexona Motion Sense", title="Rexona Motion Sense")
 
@@ -48,8 +48,7 @@ block content
 
 							p(class="usuario usuario-"+a).
 								<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-								<span>@ <strong class="username">holaquehacetw#{a}</strong></span>
-
+								<span class="username">@holaquehacetw#{a}</span>
 					
 					div.team-visitante.hidden
 
@@ -57,7 +56,7 @@ block content
 
 							p(class="usuario usuario-"+b).
 								<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-								<span>@ <strong class="username">holaquehacetw#{b}</strong></span>
+								<span class="username">@holaquehacetw#{b}</span>
 
 			///-Cancha
 
@@ -82,7 +81,7 @@ block content
 					-for(x=0; x <6; x++)
 						p.usuario.
 							<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-							<span>@ <strong class="username">holaquehacetw#{x}</strong></span>
+							<span class="username">@olaquehacetw#{x}</span>
 				
 				div.tabla.tabla-camerino
 					h3 Camerino
@@ -90,19 +89,30 @@ block content
 					-for(y=0; y <9; y++)
 						p.usuario.
 							<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-							<span class="username">@ holaquehacetw#{y}</span>
+							<span class="username">@olaquehacetw#{y}</span>
 
 
 
 			///-suplentes
 
 			//Movimientos
-			aside.col-lg-4.col-md-4.hidden-sm.hidden-xs
+			aside.col-lg-4.col-md-4.col-sm-12.col-xs-12
 				h2.azul-text Actividad #JugadorRexona
 				
 				div.actividad
 
-					-for(z=0;z <=60; z++)
+					-for(t=0;t <=10; t++)
+						div.actividad-usuario.
+							<i class="icon icon-sube"></i>
+							<img src="images/avatar.jpg" />
+
+							<p>
+								<strong class="username">@holaquehacetw#{t}</strong>
+								entra a <strong class="lugar">Suplente</strong>
+								<time class="timestamp">5 minutos</time>
+							</p>
+							
+					-for(z=0;z <=10; z++)
 						div.actividad-usuario.
 							<i class="icon icon-baja"></i>
 							<img src="images/avatar.jpg" />
@@ -112,6 +122,7 @@ block content
 								entra a <strong class="lugar">Suplente</strong>
 								<time class="timestamp">5 minutos</time>
 							</p>
+
 
 
 

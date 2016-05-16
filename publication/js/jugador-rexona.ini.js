@@ -1,7 +1,19 @@
 var equipoLocal = $('.team-local .usuario'),
-	equipoVisitante = $('.team-visitante .usuario')
+	equipoVisitante = $('.team-visitante .usuario');
 
 jQuery(document).ready(function($) {
+
+	/*corremos la primera animacion*/
+	equipoLocal.velocity({
+		opacity: 1
+
+		},{
+
+			duration: 1000,
+			easing: 'easeInOutSine',
+
+		});
+
 	
 	$('.btn-cambio').click(function(event) {
 
@@ -63,19 +75,6 @@ jQuery(document).ready(function($) {
 		};
 
 	});
-
-
-	/*corremos la primera animacion*/
-	equipoLocal.velocity({
-		opacity: 1
-
-		},{
-
-			duration: 1000,
-			easing: 'easeInOutSine',
-
-		});
-
 
 
 
