@@ -8,6 +8,18 @@
 		
 			strong
 				font-size 1.6rem
+				
+
+
+@media (max-width: 1100px)
+
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.5rem
 
 @media (max-width: 1030px)
 	.copy-ppal
@@ -25,6 +37,14 @@
 				
 
 @media (max-width: 900px)
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.3rem
+						
 	.actividad
 		margin-bottom 4rem
 		
@@ -51,12 +71,29 @@
 		background-size 100%
 
 @media (max-width: 810px)
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.2rem
+						
 	.team
 		&-local, &-visitante
 			transform scale(0.9)
+			
 
 
 @media (max-width: 770px)
+
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.2rem
 	
 	.cancha
 		path('cancha-mobile.jpg')
@@ -99,6 +136,54 @@
 			padding-top 3rem
 			transform none
 
+@media (min-width: 768px)
+	.navbar-collapse.collapse
+		display inline-block !important
+@media (max-width: 767px)
+	header
+		#menu
+			background-color #f3f4f4
+			position absolute
+			bottom 0
+			height 16.7rem
+			left -23%
+			right 0
+			top 143%
+			width 125.5%
+			
+
+		.collapse.in
+			display block !important
+			
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.6rem
+						
+			&-content
+				display block 
+				li
+					display block
+					border-bottom 1px solid darken( #f3f4f4, 40%)
+					
+					&:last-child
+						border-bottom none
+					a
+						display block
+						font-size 1.2rem
+						padding 0.8rem 1rem
+				.teens
+					border-right none 
+					padding 0
+					
+						
+		.navbar-collapse.collapse
+			display none
+				
+		.navbar-header
+			display inline-block 
 
 @media (max-width: 750px)
 	.cancha

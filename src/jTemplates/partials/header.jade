@@ -1,26 +1,33 @@
 //Header
 header.container-fluid
 	section.row
-		article.col-lg-1.col-md-1.col-sm-1.col-xs-2.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+		article.col-lg-1.col-md-1.col-sm-1.col-xs-2
 			img.img-responsive.logo(src="images/logo-rexona.jpg", alt="Rexona", title="Rexona")
 
-		article.col-lg-9.col-md-9.col-sm-9.col-xs-9.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
-			ul.menu-legales
-				//- li
-				//- 	a(href="http://rexona.com.co/jugadorrexona") #JugadorRexona
-
+		article.col-lg-11.col-md-11.col-sm-11.col-xs-10.col-menu
+			ul.menu-ppal
 
 				li
 					a(href="http://www.rexona.com.co/productos/mujer") mujer
 				li
 					a(href="http://www.rexona.com.co/productos/hombre") hombre
-				li.teens
-					a(href="http://www.rexona.com.co/productos/teens") teens
-				li
-					a(href="http://www.rexona.com.co/acerca-de-la-transpiraci%C3%B3n") acerca de la transpiración
-				li
-					a(href="http://www.rexona.com.co/innovaciones") innovaciones
-				li
-					a(href="http://www.rexona.com.co/topnav-acerca-de-rexona") acerca de rexona
+
+			div.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#menu", aria-expanded="false")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+
+			div#menu.collapse.navbar-collapse
+				ul.menu-content
+						
+					li.teens
+						a(href="http://www.rexona.com.co/productos/teens") teens
+					li
+						a(href="http://www.rexona.com.co/acerca-de-la-transpiraci%C3%B3n") acerca de la transpiración
+					li
+						a(href="http://www.rexona.com.co/innovaciones") innovaciones
+					li
+						a(href="http://www.rexona.com.co/topnav-acerca-de-rexona") acerca de rexona
 
 ///-Header
