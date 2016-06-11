@@ -2,138 +2,52 @@ extends partials/base.jade
 
 block title
 	-var titulo = "Home";
-	title #JugadorRexona
+	title Copa Rexona
 
 block content
-	section.container-fluid.container-pasos
+	section.container-fluid.banner-home
 		article.row
-			
-			div.col-lg-6.col-md-6.col-sm-8.col-xs-10.col-lg-offset-3.col-md-offset-3.col-sm-offset-2.content
+			//Logo Home
+			div.col-lg-4.col-md-4.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1
+				img.logo-home.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
+			///-Logo Home
 
-				h1.copy-ppal #JugadorRexona
-				h3.center-block.text-center Válido solo para Colombia
-
-				ol.pasos
-					li.
-						<span></span> Entra a <strong>Twitter</strong>
-					li.
-						<span></span> Cuéntanos quién es el <strong>#JugadorRexona</strong>
-					li.
-						<span></span> Participa por un viaje <strong>a ver un partido en Madrid</strong>
-
-				a.btn.btn-conoce(href="#", role="button") conoce más aquí
-
-
-				a.btn.btn-conoce(href="#", role="button") Ir a la cancha
-
+			div.col-lg-5.col-md-5.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1
 				
+				h1.tit disfruta lo mejor del torneo universitario más importante del país
 
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-2.col-lg-offset-1.col-md-offset-1
+				p.descripcion-sitio Encuentra el calendario jornada tras jornada, las imágenes, tabla de posiciones, goleadores y todo lo que se vive desde las canchas.
 
-				img.img-responsive.motion(src="images/motion-sense.png", alt="Rexona Motion Sense", title="Rexona Motion Sense")
+			div.clearfix
 
-	section.container-fluid.container-cancha
-
+	section.container-fluid.no-border
 		div.row
-			//Cancha
-			article.col-lg-8.col-md-9.col-sm-12.col-xs-12
-				h2.text-center Conoce quienes van ganando el viaje a españa a ver un partido en madrid.
-				h4.text-center Sigue participando con el #JugadorRexona aún hay tiempo.
+			//Calendario
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.cal
+				a.btn(role="button", href="calendario.html") Calendario
+			///-Calendario		
 
+			//Posiciones
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.cal
+				a.btn(role="button", href="posiciones.html") Posiciones
+			///-Posiciones
 
-				a.btn.btn-cambio(role="button").
-					<i class="glyphicon glyphicon-refresh"></i> Cambio de equipo
-				
-				div.text-center
-					h3.team.team-tlocal.team-active Equipo Local
-					h3.team.team-tvisitante Equipo Visitante
+			//Goleadores
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.cal
+				a.btn(role="button", href="goleadores.html") Goleadores
+			///-Goleadores
 
-				div.cancha
-					div.team-local
+			//Premios
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.cal
+				a.btn(role="button", href="premios.html") Premios
+			///-Premios
 
-						-for(a =1; a <12; a++)
-
-							p(class="usuario usuario-"+a).
-								<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-								<span class="username">@holaquehacetw#{a}</span>
-					
-					div.team-visitante.hidden
-
-						-for(b =1; b <12; b++)
-
-							p(class="usuario usuario-"+b).
-								<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-								<span class="username">@holaquehacetw#{b}</span>
-
-			///-Cancha
-
-			//Twitter Feed
-			aside.col-lg-4.col-md-3.col-sm-12-col-xs-12
-				h2.
-					<img  src="images/twitter.png" width="36" />Twitter Feed
-
-				div.feed.
-					<a class="twitter-timeline" href="https://twitter.com/hashtag/JugadorRexona" data-widget-id="731228001275396096">#JugadorRexona Tweets</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-			///-Twitter Feed
-
+	section.container-fluid.selector-galerias
 		div.row
-			//suplentes
-			article.col-lg-8.col-md-8.col-sm-12.col-xs-12
-				
-				div.tabla.tabla-suplente
-					h3 Suplentes
-					
-					-for(x=0; x <6; x++)
-						p.usuario.
-							<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-							<span class="username">@olaquehacetw#{x}</span>
-				
-				div.tabla.tabla-camerino
-					h3 Camerino
-					
-					-for(y=0; y <9; y++)
-						p.usuario.
-							<img src="images/avatar.jpg" class="img-responsive img-avatar" />
-							<span class="username">@olaquehacetw#{y}</span>
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-1.col-md-offset-1.galeria
+				a(href="galeria.html#galeria") Galería
 
-
-
-			///-suplentes
-
-			//Movimientos
-			aside.col-lg-4.col-md-4.col-sm-12.col-xs-12
-				h2.azul-text Actividad #JugadorRexona
-				
-				div.actividad
-
-					-for(t=0;t <=10; t++)
-						div.actividad-usuario.
-							<i class="icon icon-sube"></i>
-							<img src="images/avatar.jpg" />
-
-							<p>
-								<strong class="username">@holaquehacetw#{t}</strong>
-								entra a <strong class="lugar">Suplente</strong>
-								<time class="timestamp">5 minutos</time>
-							</p>
-							
-					-for(z=0;z <=10; z++)
-						div.actividad-usuario.
-							<i class="icon icon-baja"></i>
-							<img src="images/avatar.jpg" />
-
-							<p>
-								<strong class="username">@holaquehacetw#{z}</strong>
-								entra a <strong class="lugar">Suplente</strong>
-								<time class="timestamp">5 minutos</time>
-							</p>
-
-
-
-
-			///-Movimientos
-
-
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-1.col-md-offset-1.tribuna
+				a(href="galeria.html#tribuna") Desde la tribuna
+		
 block Scripts

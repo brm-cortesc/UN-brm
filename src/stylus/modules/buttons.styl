@@ -1,35 +1,7 @@
 .btn
-	background-color $Azul
-	color #fff
+	background-color rgba($Azul, 0.9)
+	border 1px solid $Verde
 	display block
-	font-size 1.8rem
-	margin 1rem auto 0
-	padding 1rem 
+	font-family $Rexona
 	text-transform uppercase
-	transitionBase(0.3s)
-	
-	&:active, &:focus
-		transform scale(0.95)
-		
-
-	&:hover
-		background-color lighten($Azul, 30%)
-		color #fff
-		
-	&-cambio
-		text-transform initial
-		max-width 23rem
-		
-	&-conoce
-		background-color #fff
-		border 2px solid $Peach
-		color darken($Azul, 40%)
-		display inline-block
-		margin 2rem 1rem 
-		font-size 1.9rem
-		font-weight $Bold
-		max-width 23rem
-
-	&-submit
-		margin-top 2rem
-		width 100%
+	font-weight $Bold

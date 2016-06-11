@@ -1,0 +1,1 @@
+console.log('jugador-rexona.ini.js');
