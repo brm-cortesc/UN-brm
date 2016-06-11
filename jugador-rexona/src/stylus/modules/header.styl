@@ -1,0 +1,51 @@
+header
+	padding 1rem
+	position relative
+	z-index 2
+	
+	#menu
+		transitionBase(0.3s)
+	
+
+	.menu
+		
+		&-ppal, &-content
+			display inline
+			list-style-type none
+			padding 0
+			margin 1.5rem auto !important
+			transitionBase(0.3s)
+			
+			li
+				display inline-block
+				margin-left 1rem
+				margin-right @margin-left
+				
+				a
+					color darken($Gris, 40%)
+					font-weight $Bold
+					letter-spacing -0.1rem
+					font-size 1.9rem
+					text-transform uppercase
+					
+
+			.teens
+				border-right 1px solid #000
+				padding-right 2rem
+				
+
+	.navbar-collapse.collapse
+		display inline-block
+		margin 0 !important
+		padding 0 !important
+		
+
+	.navbar-header
+		float right
+		.navbar-toggle
+			padding 0
+			margin 0
+			span
+				background-color #000
+				height 0.5rem
+				width 3rem

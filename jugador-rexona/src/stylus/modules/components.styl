@@ -1,0 +1,116 @@
+a.center-block
+	text-align center
+
+h2
+	color #fff
+	font-size 2.9rem
+	font-weight $Normal
+	// margin-left 18%
+	text-align left
+	
+	strong
+		display block
+		font-weight $Normal
+		line-height 3rem
+
+h3.center-block
+	color #fff
+	text-align left
+
+
+.content
+	text-align center
+
+.copy-ppal
+	path("twitter.png")
+	background-repeat no-repeat
+	padding-left 8rem
+	color #fff
+	font-size 6rem
+	text-align left
+	margin-top 6rem
+	
+
+
+.motion
+	margin-bottom 15.6rem
+	margin-top 6rem
+
+.pasos
+	color #fff
+	display block
+	padding 0 
+	margin 19rem auto 0
+	width 100%
+	
+	li
+		display inline-block
+		font-size 1.5rem
+		text-align center
+		text-shadow 0px 0px 5px rgba(0, 0, 0, .75)
+		vertical-align top
+		width 30%
+		
+		span
+			path("pasos.png")
+			background-repeat no-repeat
+			display block
+			margin 0 auto
+			cuadrado(13.6rem)
+			text-align center
+			vertical-align top
+		
+		// &:nth-child(1)
+		&:nth-child(2)
+			span
+				background-position 50% 0
+		&:nth-child(3)
+			span
+				background-position 100% 0
+		
+		strong
+			color #fff
+			display block
+			font-size 1.8rem
+			line-height 1.8rem
+		
+
+
+.team
+	path('titulo-team.png')
+	background-repeat no-repeat
+	color #fff
+	display inline-block
+	font-size 2rem
+	height 5.1rem
+	text-align left
+	transition transform ease-in-out 0.3s, color ease-in-out 0.3s
+	vertical-align middle
+	width 22rem
+	
+	
+	&-tlocal
+		background-position left top
+		margin-right 1.5rem
+		padding 2rem 0 0 6rem
+		
+	&-tvisitante
+		background-position right top
+		padding 2rem 0 0 0.7rem
+		
+	&-active
+		background-position-y bottom
+		color #000
+		opacity 0.6
+		transform scale(0.9)
+
+
+.terminos
+	background-color rgba(255, 255, 255, 0.40)
+	color #000
+	display block
+	font-size 1.2rem
+	margin 0 auto
+	max-width 23rem
+	padding 0.5rem
+	text-align center
