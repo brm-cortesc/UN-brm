@@ -9,7 +9,7 @@ block content
 		article.row
 			//Logo Home
 			div.col-lg-3.col-md-3.col-sm-6.col-xs-12.col-lg-offset-2.col-md-offset-2
-				img.logo.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
+				a(href="index.html"): img.logo.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
 			///-Logo Home
 
 			div.col-lg-3.col-md-3.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1
@@ -25,13 +25,14 @@ block content
 		
 		article.row
 
-			div.jornada
-				h3 Fecha 1
-				p.dia martes
-				time.fecha 18 de junio
 			div.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
+				div.jornada
+					h3 Fecha 1
+					div.derecha
+						p.dia martes
+						time.fecha 18 de junio
 				-for(a = 1; a <= 3; a++)
-					div.table-responsive.grupos
+					div.table-responsive.posiciones
 						h3.titulo-tabla Grupo #{a}
 						table.table
 							tr

@@ -5,11 +5,11 @@ block title
 	title Galería Copa Rexona
 
 block content
-	section.container-fluid.banner
+	section.container-fluid.banner-interna
 		article.row
 			//Logo
 			div.col-lg-3.col-md-3.col-sm-6.col-xs-12.col-lg-offset-2.col-md-offset-2
-				img.logo.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
+				a(href="index.html"): img.logo.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
 			///-Logo
 
 			div.col-lg-3.col-md-3.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1
@@ -18,26 +18,27 @@ block content
 
 			div.clearfix
 		
-		article.row.selector-galeria
-			//Galeria
-			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				a(href="#galeria") Galería
-			///-Galeria
-			//Desde la tribuna
-			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				a(href="#tribuna") Desde la tribuna
-			//Desde la tribuna
+	section.container-fluid.selector-galerias.selector-interna
+		div.row.text-center
+			article.col-lg-2.col-md-2.col-sm-2.col-xs-12.col-lg-offset-4.col-md-offset-4-col-sm-offset-4.galeria.active
+				a(href="galeria.html#galeria") Galería
+
+			article.col-lg-2.col-md-2.col-sm-2.col-xs-12.tribuna
+				a(href="galeria.html#tribuna") Desde la tribuna
 
 	section.container-fluid.no-border
 		h2.descripcion.
 				Encuentra lo que se vive dentro y fuera de la cancha. Utiliza  <strong>#CopaRexona</strong> en tus fotos de Instagram y Twitter para mostrar como vives este torneo.
-		div.row		
-			-for(x = 0; x <= 9; x++)
+		div.row.galeria		
+			-for(x = 1; x <= 6; x++)
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					img.img-responsive(src="images/sample-galeria.jpg", alt="Alt Imagen")
+					a.glyphicon.glyphicon-picture(href="#")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					img.img-responsive(src="images/sample-galeria.jpg", alt="Alt Imagen")
+					a.glyphicon.glyphicon-picture(href="#")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					img.img-responsive(src="images/sample-galeria.jpg", alt="Alt Imagen")
+					a.glyphicon.glyphicon-picture(href="#")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 		
 block Scripts

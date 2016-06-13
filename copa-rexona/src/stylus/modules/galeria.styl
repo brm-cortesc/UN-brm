@@ -1,0 +1,54 @@
+.galeria
+	figure
+		cursor pointer
+		margin 0
+		overflow hidden
+		padding 0 !important
+		position relative
+		height 100%
+		text-align center
+		
+		a
+			background-color rgba(0, 0, 0, 0.0)
+			bottom 0
+			color #fff
+			font-size 6rem
+			height 100%
+			left 0
+			position absolute
+			right 0
+			text-align center
+			top 0
+			transitionBase(0.3s)
+			width @height
+			z-index 5
+			
+			&:before
+				left 50%
+				opacity 0
+				position absolute
+				top 50%
+				transform translate3d(-50%, -50%, 0)
+				transition opacity ease-in-out 0.3s
+				transition-delay 0.1s
+				
+		img
+			display block
+			height auto
+			max-width 100%
+			transitionBase(0.3s)
+			position relative
+			z-index 1
+		&:hover
+			a
+				background-color rgba(0, 0, 0, 0.75)
+				height 100%
+				width @height
+				
+				&:before
+					opacity 0.99 
+					
+
+			img
+				transform scale(1.4) rotate(-8deg)
+				
