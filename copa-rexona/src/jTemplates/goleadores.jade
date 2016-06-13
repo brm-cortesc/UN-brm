@@ -16,7 +16,6 @@ block content
 				
 				h1.tit Goleadores
 
-
 			div.clearfix
 
 	section.container-fluid
@@ -24,26 +23,23 @@ block content
 			Conoce quién es el <strong>#JugadorRexona</strong> del torneo; ese que anota más y hacer que los aficionados se muevan más con cada jugada.
 		
 		article.row
-
 			div.jornada
-				h3 Fecha 1
-				p.dia martes
-				time.fecha 18 de junio
-			
-			div.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2	
-				div.table-responsive.jugadores
-					table.table
-						tr
-							th Nombre
-							th Equipo
-							th Goles
+				h3 Fecha 1 
+				p.dia martes 
+				time.fecha 18 de junio 
+				div.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
+					div.table-responsive.jugadores
+						table.table
 
-						-for(x = 0; x < 10; x++)
 							tr
-								td #{x} Jesucristo Hitler Paracelso Zeppelin
-
-								td Universidad del Norte
-
-								td #{x}
+								th Nombre
+								th Equipo
+								th Goles
+						
+							-for(x = 0; x < 10; x++)
+								tr
+									td #{x} Jesucristo Hitler Paracelso Zeppelin
+									td Universidad del Norte
+									td #{x}
 			
 block Scripts
