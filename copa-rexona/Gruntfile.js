@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 	//Se inicia la configuración del projecto
 		grunt.initConfig({
 		//Le indica cuales archivos de configuracion se van a leer
-		pkg: grunt.file.readJSON('jugador-rexona.json'),
+		pkg: grunt.file.readJSON('copa-rexona.json'),
 		banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
 			'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 					 options: {
 							 pretty: true,
 							 data:{
-							 	debug: false //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
+							 	debug: true //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
 							 }
 					 },
 					 files: [ {
