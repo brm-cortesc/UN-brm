@@ -3,6 +3,7 @@
 	background-position top center
 	background-repeat no-repeat
 	background-size 100%
+	position relative
 	
 
 .banner-interna
@@ -81,7 +82,7 @@
 			z-index 2
 			
 
-		&:active, &:hover, &:visited
+		&:active, &:hover
 			background-color rgba($Azul, 0.5)
 			border-color $Azul
 			text-decoration none
@@ -202,6 +203,16 @@
 			background-size 54%
 		.tribuna
 			background-size 70%
+
+
+.spark
+	animation sparks 4.5s linear 0s infinite normal
+	background-color lighten($Azul, 40%)
+	border-radius 100%
+	box-shadow 0px 0px 5px lighten($Verde, 60%)
+	height 0.4rem
+	position absolute
+	width @height
 
 .tit
 	color #fff

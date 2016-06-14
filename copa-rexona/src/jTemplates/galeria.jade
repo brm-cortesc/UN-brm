@@ -17,6 +17,8 @@ block content
 				h1.tit Galería de Imágenes
 
 			div.clearfix
+
+		div#sparks.container-spark
 		
 	section.container-fluid.selector-galerias.selector-interna
 		div.row.text-center
@@ -29,16 +31,28 @@ block content
 	section.container-fluid.no-border
 		h2.descripcion.
 				Encuentra lo que se vive dentro y fuera de la cancha. Utiliza  <strong>#CopaRexona</strong> en tus fotos de Instagram y Twitter para mostrar como vives este torneo.
-		div.row.galeria		
+		div#local.row.galeria.hidden
 			-for(x = 1; x <= 6; x++)
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					a.glyphicon.glyphicon-picture(href="#")
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
 					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					a.glyphicon.glyphicon-picture(href="#")
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
 					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
-					a.glyphicon.glyphicon-picture(href="#")
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
+
+		div#redes.row.galeria.hidden
+			-for(x = 1; x <= 9; x++)
+				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
+				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
+					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
+				figure.col-lg-4.col-md-4.col-sm-4.col-xs-4
+					a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-"+x+".jpg")
 					img(src="images/galeria/sample-galeria-"+x+".jpg", alt="Alt Imagen")
 		
 block Scripts
