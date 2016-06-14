@@ -1,27 +1,30 @@
-@media (max-width: 1220px)
-	.pasos
+@media (max-width: 1140px)
+	.copy-ppal
+		font-size 5rem
+		
+	.pasos 
 		li
 			font-size 1.3rem
-			
-			strong
-				font-size 1.8rem
-
-
-@media (max-width: 1160px)
-	
-	h2
-		font-size 2.5rem
-		margin-top 0rem
-	header
-		margin-bottom 0
 		
+			strong
+				font-size 1.6rem
+				
 
+
+@media (max-width: 1100px)
+
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.5rem
+
+@media (max-width: 1030px)
 	.copy-ppal
 		background-size 5.8rem
-		padding-left 6rem
-		font-size 4.8rem
 		
-
 	.pasos
 		li
 			font-size 1.3rem
@@ -31,145 +34,382 @@
 				cuadrado(12rem)
 			strong
 				font-size 1.5rem
+				
 
+@media (max-width: 900px)
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.3rem
+						
+	.actividad
+		margin-bottom 4rem
+		
 
+	.azul-text
+		text-align center
 
-@media (max-width: 1160px)
-	#registro
-		margin-bottom 3rem
+	.copy-ppal
+		background-size 4.8rem
+		font-size 3.5rem
+		
 	.pasos
-		margin-top 27rem
 		li
-			font-size 1.2rem
+			font-size 1.1rem
 			
 			span
 				background-size 300%
-				cuadrado(8rem)
-				padding-top 8rem
+				cuadrado(10rem)
 			strong
-				font-size 1.5rem
-				
-@media (max-width: 940px)
-	h2
-		font-size 2rem
-		
-	.pasos
-		margin-top 23rem
-		
-@media (max-width: 768px)
+				font-size 1.4rem
+	
+@media (max-width: 860px)
+	.cancha
+		background-size 100%
 
-	h2, .copy-ppal
-		margin-left 0
-		padding-left 0
+@media (max-width: 810px)
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.2rem
+						
+	.team
+		&-local, &-visitante
+			transform scale(0.9)
+			
+
+
+@media (max-width: 770px)
+
+	header
+		.menu
+		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.2rem
+	
+	.cancha
+		path('cancha-mobile.jpg')
+		background-size 100%
+		height inherit
+		margin-bottom 3rem
+		padding-bottom 11rem
 		text-align center
 		
+		.usuario
+			display inline-block
+			margin 2rem
+			position initial
+			vertical-align middle
+			width 19rem
+			
+			span
+				font-size 1.5rem
+				max-width 100%
 
-	#registro
-		margin-bottom 36rem
-		
-	.btn-conoce
-		margin-bottom 10rem
-		
-	// .motion
-	// 	bottom 0
-	// 	left 30%
-	// 	top initial
-	// 	width 30%
-		
-	.pasos
-		margin-top 3rem
+	.container
+		&-cancha
+			padding-top 3rem
+		&-pasos
+			background-size cover
 	
-
-@media (max-width: 620px)
-
-	#registro
-		margin-bottom 52%
-		
-	.btn-conoce
-		margin-bottom 7rem
-
-	
-	h2
-		font-size 1.7rem
-		line-height 1.6rem
-
-	header
-		.menu-legales
-			li
-				a
-					font-size 1.5rem
-	
-
 	.copy-ppal
-		font-size 4rem
-		
-@media (max-width: 500px)
-	.copy-ppal
-		background-position center left
 		background-size 4rem
-		font-size 3.5rem
+		font-size 4.5rem
+		padding-left 4.2rem
 		
+	.motion
+		margin-bottom 2.6rem
 
 	.pasos
-		li
-			font-size 1rem
-			width 32%
+		margin-top 8rem
+		
+	.team
+		&-local, &-visitante
+			padding-top 3rem
+			transform none
 
-			strong
-				font-size 1.3rem
-	
-@media (max-width: 440px)
+@media (min-width: 768px)
+	.navbar-collapse.collapse
+		display inline-block !important
+@media (max-width: 767px)
 	header
-		.menu-legales
-			li
-				a
-					font-size 1.2rem
-					
+		#menu
+			background-color #f3f4f4
+			bottom 0
+			height 23.7rem
+			left -23%
+			position absolute
+			right 0
+			top 143%
+			width 125.5%
+			z-index 10
+			
 
-	// .motion
-	// 	left 25%
-	// 	width 50%
-
-@media (max-width: 420px)
-
-	h2
-		font-size 1.5rem
-		line-height 1.4rem
-
-	.copy-ppal
-		font-size 3rem
+		.collapse.in
+			display block !important
+			
+		.menu
 		
+			&-ppal, &-content
+				li 
+					a 
+						font-size 1.6rem
+						
+			&-content
+				display block 
+				li
+					display block
+					border-bottom 1px solid darken( #f3f4f4, 40%)
+					
+					&:last-child
+						border-bottom none
+					a
+						display block
+						font-size 1.2rem
+						padding 0.8rem 1rem
+				.teens
+					border-right none 
+					padding 0
+					
+						
+		.navbar-collapse.collapse
+			display none
+				
+		.navbar-header
+			display inline-block 
+
+@media (max-width: 750px)
+	.cancha
+		.usuario
+			width 25%
+
+
+@media (max-width: 700px)
+	.cancha
+		padding-bottom 4.3rem
+		
+		.usuario
+			span
+				font-size 1.4rem
+				
+	.team
+		&-local, &-visitante
+			padding-top 0
+
+
+@media (max-width: 650px)
+
+	.container-cancha
+		h2
+			font-size 2.6rem
+
+	.motion
+		margin-bottom 13rem
+		
+	.tabla
+		.usuario
+			width 47%
+		
+
+@media (max-width: 630px)
+	.cancha
+		.usuario
+			margin 1.6rem
+			
+			span
+				font-size 1.2rem
+	
+
+@media (max-width: 580px)
+	.cancha
+		padding-bottom 1.8rem
+
+@media (max-width: 560px)
+	.cancha
+		padding-bottom 2.4rem
+		
+		.usuario
+			margin 1.2rem
+
+	.container-pasos
+		.col-xs-2
+			display none
+		.col-xs-10
+			margin-bottom 6rem
+			width 100%
+			
 	.pasos
-		width 80%
+		li 
+			width 32%
+			
+
+@media (max-width: 540px)
+	.cancha
+		margin-top 3rem
+		padding-bottom 4.8rem
+		
+		.usuario
+			margin 0.8rem
+			width 28%
+
+@media (max-width: 520px)
+	.team
+		font-size 1.4rem
+		width 45%
+
+@media (max-width: 480px)
+	.cancha
+		background-size 220%
+		border-bottom 6px solid #fff
+		border-left @border-bottom
+		border-right @border-bottom
+		border-top 6px solid transparent
+		border-radius 22px
+		
+		.usuario
+			margin 1rem
+			width 42%
+			
+			span
+				font-size 1.5rem
+
+
+@media (max-width: 460px)
+	.copy-ppal
+		background-size 3rem
+		font-size 3.5rem
+		padding-left 3.2rem
+		
+	.tabla
+		.usuario
+			width 45%
+			span
+				border-radius 0 0 10px 10px
+				display block
+				margin -1.5rem auto 0
+				max-width 100%
+				position relative
+				width 100%
+				z-index 3
+				
+			.img-avatar
+				z-index 1
+
+@media (max-width: 440px)
+	.pasos
+		margin-top 2rem
+		text-align center
+		width 100%
 		li
-			display block
+			// display block
 			font-size 1.3rem
 			margin-bottom 2rem
 			margin-top @margin-bottom
-			width 100%
+			width 45%
+			
+			span
+				margin-left 3rem
 
 			strong
 				font-size 1.6rem
 				
+@media (max-width: 420px)
+	.cancha
+		background-size 250%
+		
+	.team
+		&-local, &-visitante
+			padding-top 3rem
+
+@media (max-width: 410px)
+	.cancha
+		.usuario
+			span
+				font-size 1.3rem
+	
+	.team
+		font-size 1.3rem
+		width 47%
+
+
 @media (max-width: 390px)
-	header
-		.menu-legales
-			margin 0.5rem auto !important
-			li
-				display block
-				a
-					font-size 1.2rem
-					
+	.cancha
+		background-size cover
+		
+		.usuario
+			margin 0.5rem
+			width 100%
+			
+			span, .img-avatar
+				display inline-block
+				vertical-align middle
+				
+			span
+				margin-left -1.5rem
+				margin-top 0
+				padding-left 2rem
+			
+			.img-avatar
+				z-index 3
+
 	.copy-ppal
 		background-size 2.5rem
+		font-size 3rem
+		padding-left 2.2rem
+		
+	.pasos
+		li
+			font-size 1.1rem
+			span
+				margin-left 1.8rem
+			
+			strong
+				font-size 1.4rem
 	
-@media (max-width: 360px)
-	.copy-ppal
-		background-size 2rem
-		padding-left 3rem
+	.tabla
+		.usuario
+			width 100%
+			span
+				display inline-block
+				margin-left -1.5rem
+				margin-top 0
+				padding-left 2rem
+				z-index 1
+				width 50%
+				
+			.img-avatar
+				z-index 3
+
+	.team
+		font-size 1.5rem
+			
+		&-tlocal
+			margin-right 1.2rem
+			padding 1.3rem 0 0 6rem
+			
+		&-tvisitante
+			padding 1.3rem 4rem 0 0.7rem
 
 
-@media (max-width: 320px)
-	.copy-ppal
-		background none
-		padding 0
+@media (max-width: 340px)
+	.pasos
+		li
+			margin-bottom 1rem
+			margin-top @margin-bottom
+			width 49%
+			span
+				margin-left 1.2rem
+				
+
+	.tabla
+		.usuario
+			span
+				width 60%
