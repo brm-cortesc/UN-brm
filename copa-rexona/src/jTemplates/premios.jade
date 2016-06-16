@@ -1,0 +1,35 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Home";
+	title Copa Rexona
+
+block content
+	section.container-fluid.banner-interna
+		article.row
+			//Logo Home
+			div.col-lg-6.col-md-6.col-sm-6.col-xs-6
+				img.logo.img-responsive(src="images/logo-copa-rexona.png", alt="Copa Rexona", title="Copa Rexona")
+			///-Logo Home
+
+			div.col-lg-5.col-md-5.col-sm-6.col-xs-6
+				
+				h1.tit.tit-premios El premio se entrega al equipo ganador de la rama másculina y femenina
+
+				p.descripcion-sitio.descripcion-premio cada uno consta de $600 para un total de $1200
+
+
+			div.clearfix
+		div#sparks.container-spark
+
+	section.container-fluid
+
+		article.row
+
+			div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+
+				a.btn.btn-terminos(href="terminos.html") Conóce los términos y condiciones
+
+
+		
+block Scripts
