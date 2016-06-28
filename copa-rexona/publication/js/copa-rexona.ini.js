@@ -95,5 +95,18 @@ var galeriaBtn = $('.selector-interna .galeria a'),
     };
 
 
+    //Acordeon//
+    var acc = document.getElementsByClassName("btn-acordeon");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(e){
+            e.preventDefault();
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+      }
+    }
+
+
 
 });
