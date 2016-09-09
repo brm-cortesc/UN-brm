@@ -33,11 +33,30 @@ jQuery(document).ready(function($) {
 	    };
 	};
 
-	//Helado Negro
-	votaciones('#cblack', '.status-black .percentage', 60 );
+	var ne = jQuery('.dataNegro').text(),
+		i = 0,
+		pi = jQuery('.dataPink').text();
 
-	//Helado Rosa
-	votaciones('#cpink', '.status-pink .percentage', 40 );
+	if (i <= 100) {
+
+		setInterval(function() {
+			//animacion de numero
+			if ( i <= ne ) {
+				//Helado Negro
+				votaciones('#cblack', '.status-black .percentage', i );
+				// flag = flag+1;
+
+			}if(i  <= pi){
+				//Helado Rosa
+				votaciones('#cpink', '.status-pink .percentage', i );
+				// flag = flag+1;
+			}
+			i++
+		}, 10);
+
+	};
+
+
 
 
 	//Simular Click en mobile
