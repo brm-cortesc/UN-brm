@@ -1,0 +1,29 @@
+//Footer
+footer.container-fluid
+	div.row
+		div.col-lg-2.col-md-2.col-sm-4.col-xs-4
+			p &copy; magnum
+
+		
+		div.col-lg-4.col-md-5.col-sm-8.col-xs-8.pull-right
+			p
+				span Explícanos tu respuesta
+				a(role="button" class="icon icon-fb" href="https://www.facebook.com/MagnumEcuador/" target="_blank")
+					+image('fb.svg', 'Helados Magnum en Facebook')
+				a(role="button" class="icon icon-tw" href="https://twitter.com/Magnum_Ec")
+					+image('twitter.svg', 'Helados Magnum en Twitter')
+
+
+
+///-Footer
+
+//Scripts
+//-Estos son los scripts que van en todos los htmls del desarrollo
+if debug == true
+	script(src='js/libs/jquery.js')
+	script(src='js/libs/bootstrap.min.js')
+	script(src='js/pink-black.js')
+
+else
+	script(src="js/libs.min.js")
+	script(src='js/pink-black.js')

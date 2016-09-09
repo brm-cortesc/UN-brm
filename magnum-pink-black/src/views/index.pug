@@ -1,0 +1,49 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Magnum - Pink and Black
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Pink and Black" )
+
+
+block content
+	section.container-fluid
+		.menu-dummie
+		h1.text-center ¿De qué color quieres ver hoy al edificio THE POINT?
+
+		div.row
+			//Pink
+			article.col-lg-6.col-md-6.col-sm-6.col-xs-6.side.side-pink
+
+				a.btn.btn-pink(role="button" href="https://twitter.com/intent/tweet?hashtags=Pink" target="_blank") Vota Pink
+
+				div.status-pink
+					h2.percentage 0%
+
+					div.helado
+						include ../../publication/images/helado-pink.svg				
+
+			///-Pink
+			
+			//Black
+			article.col-lg-6.col-md-6.col-sm-6.col-xs-6.side.side-black
+
+				a.btn.btn-black(role="button" href="https://twitter.com/intent/tweet?hashtags=Black" target="_blank") Vota Black
+
+				div.status-black
+					h2.percentage 0%
+
+					div.helado
+						include ../../publication/images/helado-black.svg
+
+			///-Black
+
+	
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

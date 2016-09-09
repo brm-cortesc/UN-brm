@@ -1,6 +1,6 @@
-#Rexona
+#UN
 
-Bienvenido equipo de Rexona, este es el repositorio de Rexona.
+Bienvenido equipo de Univeler, este es el repositorio de Univeler.
 
 Recuerden utilizarlo de forma responsable y constante.
 
