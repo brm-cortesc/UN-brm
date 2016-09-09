@@ -1,36 +1,38 @@
-.btn
-	border 5px solid #fff
-	border-radius 0 !important
-	box-sizing border-box
-	color #fff
-	display block 
-	font-size 2.8rem
-	font-weight $Bold
-	margin auto
-	max-width 31rem
-	text-transform uppercase
-	transitionBase(0.3s)
-	
-	&:link, &:active, &:hover, &:visited
-		color #fff
-		outline 0 !important
-		outline none !important
-		
-	&:hover		
-		transform scale(1.1)
-	
-	&-black
-		background-color $Black
-		
-		&:hover
-			background-color darken(@background-color, 40%)
-			box-shadow 0px 0px 20px 0 rgba(255, 255, 255, .75)
-			text-shadow 0px 0px 10px rgba(255, 255, 255, .75)
+.page-magnum-pink-black
 
-	&-pink
-		background-color $Rosa
+	.btn
+		border 5px solid #fff
+		border-radius 0 !important
+		box-sizing border-box
+		color #fff
+		display block 
+		font-size 2.8rem
+		font-weight $Bold
+		margin auto
+		max-width 31rem
+		text-transform uppercase
+		transitionBase(0.3s)
 		
-		&:hover
-			background-color lighten(@background-color, 40%)
-			box-shadow 0px 0px 20px 0 rgba($Rosa, 0.75)
-			text-shadow 0px 0px 10px rgba($Rosa, 0.75)
+		&:link, &:active, &:hover, &:visited
+			color #fff
+			outline 0 !important
+			outline none !important
+			
+		&:hover		
+			transform scale(1.1)
+		
+		&-black
+			background-color $Black
+			
+			&:hover
+				background-color darken(@background-color, 40%)
+				box-shadow 0px 0px 20px 0 rgba(255, 255, 255, .75)
+				text-shadow 0px 0px 10px rgba(255, 255, 255, .75)
+
+		&-pink
+			background-color $Rosa
+			
+			&:hover
+				background-color lighten(@background-color, 40%)
+				box-shadow 0px 0px 20px 0 rgba($Rosa, 0.75)
+				text-shadow 0px 0px 10px rgba($Rosa, 0.75)
