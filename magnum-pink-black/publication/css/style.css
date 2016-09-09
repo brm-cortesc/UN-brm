@@ -4,7 +4,7 @@
  * @link https://github.com/cortesc/HTML
  * @link Cristian Cortés - cristian.cortes@brm.com.co
  * @license 
- *Fri Sep 09 2016 12:18:19 GMT-0500 (COT)
+ *Fri Sep 09 2016 14:44:52 GMT-0500 (COT)
  */
 ::selection {
   background: #fff;
@@ -121,7 +121,7 @@
   box-shadow: 0px 0px 20px 0 rgba(240,72,131,0.75);
   text-shadow: 0px 0px 10px rgba(240,72,131,0.75);
 }
-.page-magnum-pink-black h1 {
+.page-magnum-pink-black h1.text-center {
   margin: 6rem auto 5rem;
   max-width: 69rem;
   text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
@@ -367,7 +367,7 @@
     -moz-background-size: 140%;
     background-size: 140%;
   }
-  .page-magnum-pink-black h1 {
+  .page-magnum-pink-black h1.text-center {
     font-size: calc(1.5vw + 1.5vh + 0.25vmin);
     font-size: -webkit-calc(1.5vw + 1.5vh + 0.25vmin);
     font-size: -moz-calc(1.5vw + 1.5vh + 0.25vmin);
@@ -393,7 +393,7 @@
     -moz-background-size: 230%;
     background-size: 230%;
   }
-  .page-magnum-pink-black h1 {
+  .page-magnum-pink-black h1.text-center {
     margin: 2rem auto;
   }
   .page-magnum-pink-black .menu-dummie {
@@ -518,7 +518,7 @@
   .page-magnum-pink-black .menu-dummie {
     height: 12.2rem;
   }
-  .page-magnum-pink-black h1 {
+  .page-magnum-pink-black h1.text-center {
     font-size: calc(1.7vw + 1.7vh + 0.25vmin);
     font-size: -webkit-calc(1.7vw + 1.7vh + 0.25vmin);
     font-size: -moz-calc(1.7vw + 1.7vh + 0.25vmin);
