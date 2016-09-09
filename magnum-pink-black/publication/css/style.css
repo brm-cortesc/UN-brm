@@ -4,7 +4,7 @@
  * @link https://github.com/cortesc/HTML
  * @link Cristian Cortés - cristian.cortes@brm.com.co
  * @license 
- *Fri Sep 09 2016 14:44:52 GMT-0500 (COT)
+ *Fri Sep 09 2016 15:51:40 GMT-0500 (COT)
  */
 ::selection {
   background: #fff;
@@ -354,11 +354,20 @@
 .page-magnum-pink-black footer .pull-right p {
   padding: 0;
 }
+@media (max-width: 1370px) {
+  .page-magnum-pink-black .menu-dummie {
+    height: 6.5rem;
+    width: 100%;
+  }
+}
 @media (max-width: 1100px) {
   .page-magnum-pink-black {
     -webkit-background-size: 120%;
     -moz-background-size: 120%;
     background-size: 120%;
+  }
+  .page-magnum-pink-black .menu-dummie {
+    height: 3rem;
   }
 }
 @media (max-width: 910px) {
@@ -397,8 +406,7 @@
     margin: 2rem auto;
   }
   .page-magnum-pink-black .menu-dummie {
-    height: 17.4rem;
-    width: 100%;
+    height: 5.6rem;
   }
   .page-magnum-pink-black .helado {
     margin: 2rem auto;
@@ -418,9 +426,6 @@
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
   }
-  .page-magnum-pink-black .side {
-    margin-top: 5rem;
-  }
   .page-magnum-pink-black .side svg {
     height: auto;
     width: 53%;
@@ -434,9 +439,9 @@
 }
 @media (max-width: 730px) {
   .page-magnum-pink-black {
-    -webkit-background-size: 260%;
-    -moz-background-size: 260%;
-    background-size: 260%;
+    -webkit-background-size: 210%;
+    -moz-background-size: 210%;
+    background-size: 210%;
   }
   .page-magnum-pink-black h1 {
     margin: 1rem auto;
@@ -444,12 +449,12 @@
 }
 @media (max-width: 640px) {
   .page-magnum-pink-black {
-    -webkit-background-size: 280%;
-    -moz-background-size: 280%;
-    background-size: 280%;
+    -webkit-background-size: 230%;
+    -moz-background-size: 230%;
+    background-size: 230%;
   }
   .page-magnum-pink-black .menu-dummie {
-    height: 16.4rem;
+    height: 5rem;
     width: 100%;
   }
   .page-magnum-pink-black footer .row {
@@ -489,13 +494,9 @@
 }
 @media (max-width: 550px) {
   .page-magnum-pink-black {
-    -webkit-background-size: 300%;
-    -moz-background-size: 300%;
-    background-size: 300%;
-  }
-  .page-magnum-pink-black .menu-dummie {
-    height: 15rem;
-    width: 100%;
+    -webkit-background-size: 230%;
+    -moz-background-size: 230%;
+    background-size: 230%;
   }
   .page-magnum-pink-black .side h2 {
     font-size: 3rem;
@@ -515,9 +516,6 @@
   }
 }
 @media (max-width: 440px) {
-  .page-magnum-pink-black .menu-dummie {
-    height: 12.2rem;
-  }
   .page-magnum-pink-black h1.text-center {
     font-size: calc(1.7vw + 1.7vh + 0.25vmin);
     font-size: -webkit-calc(1.7vw + 1.7vh + 0.25vmin);
@@ -540,6 +538,11 @@
   }
 }
 @media (max-width: 420px) {
+  .page-magnum-pink-black {
+    -webkit-background-size: 290%;
+    -moz-background-size: 290%;
+    background-size: 290%;
+  }
   .page-magnum-pink-black footer p span {
     display: block;
   }
@@ -566,15 +569,7 @@
     padding-right: 9rem !important;
   }
 }
-@media (max-width: 400px) {
-  .menu-dummie {
-    height: 10.2rem;
-  }
-}
 @media (max-width: 360px) {
-  .page-magnum-pink-black .menu-dummie {
-    height: 9.9rem;
-  }
   .page-magnum-pink-black .side-black {
     padding-left: 8.5rem !important;
   }
@@ -583,19 +578,11 @@
   }
 }
 @media (max-width: 340px) {
-  .page-magnum-pink-black .menu-dummie {
-    height: 9.5rem;
-  }
   .page-magnum-pink-black .side-black {
     padding-left: 6.5rem !important;
   }
   .page-magnum-pink-black .side-pink {
     padding-right: 6.5rem !important;
-  }
-}
-@media (max-width: 320px) {
-  .menu-dummie {
-    height: 6.8rem;
   }
 }
 @media (min-height: 720px) and (orientation: portrait) {
@@ -612,7 +599,7 @@
 }
 @media (min-width: 1600px) {
   .page-magnum-pink-black .menu-dummie {
-    height: 13rem;
+    height: 10rem;
   }
   .page-magnum-pink-black .side svg {
     height: auto;
