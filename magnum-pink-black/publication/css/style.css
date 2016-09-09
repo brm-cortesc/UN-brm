@@ -4,7 +4,7 @@
  * @link https://github.com/cortesc/HTML
  * @link Cristian Cortés - cristian.cortes@brm.com.co
  * @license 
- *Fri Sep 09 2016 16:37:08 GMT-0500 (COT)
+ *Fri Sep 09 2016 17:17:28 GMT-0500 (COT)
  */
 ::selection {
   background: #fff;
@@ -416,7 +416,7 @@
     margin: 2rem auto;
   }
   .page-magnum-pink-black .menu-dummie {
-    height: 5.6rem;
+    height: 11.6rem;
   }
   .page-magnum-pink-black .helado {
     margin: 2rem auto;
@@ -464,7 +464,7 @@
     background-size: 230%;
   }
   .page-magnum-pink-black .menu-dummie {
-    height: 5rem;
+    height: 10rem;
     width: 100%;
   }
   .page-magnum-pink-black footer .row {
@@ -549,9 +549,9 @@
 }
 @media (max-width: 420px) {
   .page-magnum-pink-black {
-    -webkit-background-size: 290%;
-    -moz-background-size: 290%;
-    background-size: 290%;
+    -webkit-background-size: 340%;
+    -moz-background-size: 340%;
+    background-size: 340%;
   }
   .page-magnum-pink-black footer p span {
     display: block;
