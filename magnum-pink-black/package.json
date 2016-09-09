@@ -6,7 +6,7 @@
   },
   "scripts": {
     "watch": "gulp watch",
-    "finalizar": "gulp libs && gulp minicss && gulp views && rm publication/**/concat.**.**"
+    "finalizar": "gulp libs && gulp css && gulp minicss && gulp views && rm publication/**/concat.**.**"
   },
   "devDependencies": {
     "browser-sync": "^2.15.0",
