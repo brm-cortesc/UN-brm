@@ -4,7 +4,7 @@
  * @link https://github.com/cortesc/HTML
  * @link Cristian Cortés - cristian.cortes@brm.com.co
  * @license 
- *Fri Sep 09 2016 12:07:54 GMT-0500 (COT)
+ *Fri Sep 09 2016 12:18:19 GMT-0500 (COT)
  */
 ::selection {
   background: #fff;
@@ -19,18 +19,7 @@
 ::-webkit-file-upload-button {
   cursor: pointer;
 }
-.page-magnum-pink-black a {
-  -o-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-}
-.page-magnum-pink-black a img {
-  border: 0;
-  outline: 0;
-}
-.page-magnum-pink-black body {
+.page-magnum-pink-black {
   background-color: #21111c;
   background-image: url("../images/bg.jpg");
   background-position: top center;
@@ -42,6 +31,17 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
+}
+.page-magnum-pink-black a {
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.page-magnum-pink-black a img {
+  border: 0;
+  outline: 0;
 }
 .page-magnum-pink-black button,
 .page-magnum-pink-black input,
@@ -355,14 +355,14 @@
   padding: 0;
 }
 @media (max-width: 1100px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 120%;
     -moz-background-size: 120%;
     background-size: 120%;
   }
 }
 @media (max-width: 910px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 140%;
     -moz-background-size: 140%;
     background-size: 140%;
@@ -388,7 +388,7 @@
   }
 }
 @media (max-width: 768px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 230%;
     -moz-background-size: 230%;
     background-size: 230%;
@@ -433,7 +433,7 @@
   }
 }
 @media (max-width: 730px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 260%;
     -moz-background-size: 260%;
     background-size: 260%;
@@ -443,7 +443,7 @@
   }
 }
 @media (max-width: 640px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 280%;
     -moz-background-size: 280%;
     background-size: 280%;
@@ -488,7 +488,7 @@
   }
 }
 @media (max-width: 550px) {
-  .page-magnum-pink-black body {
+  .page-magnum-pink-black {
     -webkit-background-size: 300%;
     -moz-background-size: 300%;
     background-size: 300%;
