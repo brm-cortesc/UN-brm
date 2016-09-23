@@ -4,7 +4,7 @@
  * @link https://github.com/cortesc/HTML
  * @link Cristian Cortés - cristian.cortes@brm.com.co
  * @license 
- *Fri Sep 09 2016 17:17:28 GMT-0500 (COT)
+ *Fri Sep 23 2016 10:51:51 GMT-0500 (COT)
  */
 ::selection {
   background: #fff;
@@ -144,6 +144,9 @@
 .page-magnum-pink-black .status-black,
 .page-magnum-pink-black .status-pink {
   position: relative;
+}
+.page-magnum-pink-black .text-legal {
+  text-shadow: 0px 0px 5px rgba(33,17,28,0.8), 0px 0px 5px rgba(33,17,28,0.8);
 }
 .page-magnum-pink-black .text-white {
   text-shadow: none !important;
