@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Tue Sep 27 2016 09:52:09 GMT-0500 (COT)
+ Tue Sep 27 2016 18:31:28 GMT-0500 (COT)
  !*/
 ::selection {
   background: #fff;
@@ -131,6 +131,7 @@
   top: 0.5rem;
 }
 .page-magnum-pink-black .btn-tw svg {
+  left: 0.8rem;
   top: 1.2rem;
 }
 .page-magnum-pink-black .btn-ver-black {
@@ -143,13 +144,15 @@
 .page-magnum-pink-black .btn-fb,
 .page-magnum-pink-black .btn-tw,
 .page-magnum-pink-black .btn-ver-pink,
-.page-magnum-pink-black .btn-reload {
+.page-magnum-pink-black .btn-reload,
+.page-magnum-pink-black .btn-wapp {
   background-color: #f04883;
 }
 .page-magnum-pink-black .btn-fb:hover,
 .page-magnum-pink-black .btn-tw:hover,
 .page-magnum-pink-black .btn-ver-pink:hover,
-.page-magnum-pink-black .btn-reload:hover {
+.page-magnum-pink-black .btn-reload:hover,
+.page-magnum-pink-black .btn-wapp:hover {
   background-color: #e7135d;
 }
 .page-magnum-pink-black .btn-ver-pink {
@@ -198,7 +201,7 @@
 .page-magnum-pink-black .img-gif {
   position: relative;
 }
-.page-magnum-pink-black .img-gif:before {
+.page-magnum-pink-black .img-gif::before {
   border: 2px solid #fff;
   content: ' ';
   height: 100%;
@@ -216,6 +219,38 @@
   margin-bottom: 3%;
   margin-top: -3%;
   position: relative;
+}
+.page-magnum-pink-black .loader {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 94%;
+}
+.page-magnum-pink-black .loader .status {
+  bottom: 0;
+  left: 40%;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  height: auto;
+  width: 20%;
+}
+.page-magnum-pink-black .loader .status h2 {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  width: 100%;
+}
+.page-magnum-pink-black .loader .status svg {
+  height: auto;
+  width: 100%;
 }
 .page-magnum-pink-black .menu-dummie {
   height: 12rem;
@@ -242,6 +277,9 @@
 .page-black .helado .img-responsive,
 .page-pink .helado .img-responsive {
   width: 100%;
+}
+.text-white {
+  color: #fff !important;
 }
 .page-black {
   background-color: #21111c;
@@ -499,6 +537,9 @@
   .page-magnum-pink-black .helado {
     max-width: 100%;
   }
+  .page-magnum-pink-black .helado #pink-home {
+    max-width: 92%;
+  }
   .page-magnum-pink-black .helado .img-responsive {
     width: 6.8rem;
   }
@@ -509,7 +550,9 @@
     width: 100%;
   }
   .page-magnum-pink-black .row-btn .btn svg {
-    display: inline;
+    display: inline-block;
+    margin-left: -4.5rem;
+    margin-right: 4.5rem;
   }
   .page-black .helado,
   .page-pink .helado {
@@ -559,8 +602,19 @@
   .page-magnum-pink-black .col-compartir .btn-fb {
     margin-left: 0.8rem;
   }
+  .page-magnum-pink-black .helado #pink-home {
+    display: block;
+    margin: auto;
+    max-width: 93.1%;
+  }
 }
 @media (min-width: 600px) {
+  .page-magnum-pink-black .btn-ver-black svg,
+  .page-magnum-pink-black .btn-ver-pink svg {
+    display: inline-block;
+    margin-left: -3rem;
+    margin-right: 3rem;
+  }
   .page-magnum-pink-black .col-compartir {
     margin-top: 1.6rem;
     text-align: center;
@@ -596,7 +650,6 @@
     display: none;
   }
   .page-magnum-pink-black .menu-dummie {
-    border: 1px solid #008000;
     height: 10.3rem;
   }
   .page-magnum-pink-black .menu-dummie + .row {
@@ -637,7 +690,7 @@
   }
   .page-black h1.text-section,
   .page-pink h1.text-section {
-    left: 53%;
+    left: 50%;
     position: absolute;
   }
   .page-black .col-sm-12,
@@ -682,9 +735,13 @@
   }
   .page-magnum-pink-black .col-compartir .btn-fb svg,
   .page-magnum-pink-black .col-compartir .btn-tw svg {
-    left: 0.5rem;
+    left: 1.6rem;
     position: absolute;
-    top: 0.5rem;
+    top: 0.7rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-tw svg {
+    left: 0.8rem;
+    top: 1.2rem;
   }
 }
 @media (min-width: 1010px) {
@@ -727,12 +784,19 @@
 @media (min-width: 1280px) {
   .page-black .helado,
   .page-pink .helado {
-    bottom: 5.2rem;
+    bottom: initial;
+    top: -18.9rem;
     width: 23rem;
   }
   .page-black .helado .img-responsive,
   .page-pink .helado .img-responsive {
     width: 100%;
+  }
+  .page-black .helado {
+    width: 28.5rem;
+  }
+  .page-pink .helado {
+    width: 26.4rem;
   }
 }
 @media (min-width: 1600px) {

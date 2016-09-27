@@ -23,7 +23,14 @@ block content-black
 				| Helados diferentes para momentos diferentes
 			//Gif
 			div.col-lg-4.col-md-4.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1.col-xs-offset-1.img-gif
-				img.img-responsive
+				div.loader.hidden
+					div.status
+						h2.percentage 0%
+
+						div.helado-loader
+							include ../../publication/images/helado-black.svg
+
+				img.img-responsive(src="images/span.png" width="600" height="600")
 			///-Gif
 
 
@@ -38,6 +45,9 @@ block content-black
 				a.btn.btn-tw(href="#", role="button")
 					include ../../publication/images/twitter.svg
 					span Twitter
+
+				a.btn.btn-wapp(href="#", role="button")
+					include ../../publication/images/wapp.svg
 
 			//texto & compartir
 

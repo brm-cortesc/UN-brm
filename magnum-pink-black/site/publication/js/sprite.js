@@ -26,7 +26,7 @@
         };
 }());
 
-var sprite = function (canvasID, imgSource,cWidth, cHeight, Width, fps) {
+var sprite = function (canvasID, imgSource,cWidth, cHeight, Width, frames, fps) {
 
 	/*Variables, objeto img, y donde se pinta*/
 			
@@ -123,7 +123,7 @@ var sprite = function (canvasID, imgSource,cWidth, cHeight, Width, fps) {
 		width: Width,
 		height: cHeight,
 		image: objeto,
-		numberOfFrames: Width / cWidth ,
+		numberOfFrames: frames ,
 		ticksPerFrame: fps
 	});
 	

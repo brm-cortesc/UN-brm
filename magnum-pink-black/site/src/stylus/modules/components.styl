@@ -40,7 +40,9 @@
 	.img-gif
 		position relative
 		
-		&:before
+		// &::after
+			
+		&::before
 			border 2px solid #fff
 			content ' '
 			cuadrado(100%)
@@ -58,19 +60,35 @@
 			margin-top @margin-left
 			position relative
 			
-			// &:before
-			// 	background-color #f3f3f3
-			// 	border 0
-			// 	color $Purpura
-			// 	content '\e031'
-			// 	font-family $Icons
-			// 	display block
-			// 	font-size 1.9rem
-			// 	padding 25%
-			// 	height 100%
-			// 	position absolute
-			// 	width @height
-			// 	z-index 0
+
+	.loader
+		centrarAb()
+		padding 0
+		margin 0
+		text-align center
+		width 94%
+		
+
+		.status
+			bottom 0
+			left 40%
+			margin 0
+			position absolute
+			right 0
+			top 30%
+			height auto
+			width 20%
+			
+			h2
+				position absolute
+				text-align center
+				top 25%
+				width 100%
+				
+			svg
+				height auto
+				width 100%
+		
 
 	.menu-dummie
 		height 12rem
@@ -101,4 +119,7 @@
 
 			.img-responsive
 				width 100%
-			
+				
+.text
+	&-white
+		color white !important			

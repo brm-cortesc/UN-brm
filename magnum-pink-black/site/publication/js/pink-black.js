@@ -1,5 +1,39 @@
 jQuery(document).ready(function($) {
 
+	//Cargamos los sprites estáticos
+	sprite('black-home', 'images/black-sprite.png', 264, 610, 8448, 1,1);
+
+	sprite('pink-home', 'images/pink-sprite.png', 264, 660, 10824, 1,1);
+	
+
+	//animacion de sprites on hover
+	$('.btn').mouseover(function() {
+
+
+		if( $(this).hasClass('btn-ver-black') ){
+			sprite('black-home', 'images/black-sprite.png', 264, 610, 8448, 32,3);
+
+
+		}else if( $(this).hasClass('btn-ver-pink') ){
+			
+			sprite('pink-home', 'images/pink-sprite.png', 264, 660, 10824, 41,3);
+		}
+
+	});
+
+	//static on mouse leave
+	$('.btn').mouseleave(function() {
+		if( $(this).hasClass('btn-ver-black') ){
+			sprite('black-home', 'images/black-sprite.png', 264, 610, 8448, 1,1);
+
+
+		}else if( $(this).hasClass('btn-ver-pink') ){
+			
+			sprite('pink-home', 'images/pink-sprite.png', 264, 660, 10824, 1,1);
+		}
+		
+	});
+
 
 	
 	$('.btn-ver-pink').click(function(e) {
@@ -23,7 +57,7 @@ jQuery(document).ready(function($) {
 				if( total == 150){
 					$('body').children()
 						.velocity('fadeOut',
-							{duration: '500',
+							{duration: '250',
 							complete: function () {
 								window.location = "pink.html";
 							}
@@ -58,7 +92,7 @@ jQuery(document).ready(function($) {
 				if( total == -50){
 					$('body').children()
 						.velocity('fadeOut',
-							{duration: '500',
+							{duration: '250',
 							complete: function () {
 								window.location = "black.html";
 							}

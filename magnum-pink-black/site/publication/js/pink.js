@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		});
 
 	//Carga del sprite
-	sprite('pink', 'images/pink-sprite.png', 264, 660, 10824, 3);
+	sprite('pink', 'images/pink-sprite.png', 264, 660, 10824, 41,3);
 
 
 	//Array de gifs
@@ -29,12 +29,12 @@ jQuery(document).ready(function($) {
 	];
 
 	var imgContainer = $('.img-gif img'),
-		txtContainer = $('.text-comparte');
+		txtContainer = $('.text-comparte'),
+		i = 0;
 
 	// Función para traer una imagen random
 
 	var cambiar = function () {
-
 		var max = gifs.length,
 		min = 0,
 		randNum;
@@ -47,16 +47,109 @@ jQuery(document).ready(function($) {
 		
 	};
 
-	//se ejecuta al cargar la página
-	cambiar();
+	//Funcion rellenar helado
+	function loader(obj, text, offset){
 
-	$('.btn-reload').click(function(e) {
+		//set de color
+	    $(obj+' stop').attr('offset', offset+'%');
+		//set de texto
+	    $(text).html(offset+'%');
+
+	    //Cambio de color de texto cuando se rellena la figura en mobile
+
+	    if ( screenWidth <= 620 ) {
+
+	    	setTimeout(function() {
+
+	    		
+	    		if (offset >= 60 ) {
+
+	    				$(text).addClass('text-white');
+
+	    		}else{
+
+	    				$(text).removeClass('text-white');
+
+	    		};
+
+	    	}, 10);
+	    };
+	};
+
+	//dummy load
+
+	var filler = function () {
+		setInterval(function() {
+				//animacion de numero				
+			loader('#cpink', '.status .percentage', i );
+
+			if ( i == 100 ) {
+				$('.loader').addClass('hidden');
+				cambiar();
+				console.log(i)
+			}
+			
+			i++
+		}, 10);
+	};
+
+	var cargador = function () {
+
+		i = 0;
+		clearInterval(filler);
+		
+		imgContainer.attr('src', 'images/span.png');
+		$('.loader').removeClass('hidden');		
+
+		if (i <= 100) {
+
+			filler();			
+
+		}else{
+
+
+			window.clearInterval(filler);
+			
+			loader('#cpink', '.status-pink .percentage', 0);
+
+		};
+	};
+
+	//Loader de imagenes
+	var offset,
+		screenWidth = $(window).width(),
+		text = $('.percentage');
+
+	$('.btn').click(function(e) {
 		//se ejecuta al hacer click
-		// imgContainer.attr('src', 'images/');
 		e.preventDefault();
-		cambiar();
+		clearInterval(filler);
+
+		
+		if ( $(this).hasClass('btn-reload') ) {
+			cargador();
+		}else if($(this).hasClass('btn-ver-black')) {
+			
+			$('body')
+				.velocity({
+					backgroundColor: '#21111c',
+				},
+					{duration: '250'
+				})
+				.velocity('fadeOut',
+					{duration: '250',
+					complete: function () {
+						
+						window.location = 'black.html'
+					}
+				});
+		};
 
 	});
+
+	//Traemos primera imagen
+	cargador();
+
 
 
 });
