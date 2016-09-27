@@ -1,0 +1,62 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	- var titulo = 'Black';
+	title Magnum - Pink and Black
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Pink and Black" )
+
+
+block content-black
+	section.container-fluid
+		//Para dar espacio del menu
+		.menu-dummie
+		///-Para dar espacio del menu
+
+		div.row
+			h1.text-center.text-section
+				span #PinkAndBlack
+				| Helados diferentes para momentos diferentes
+			//Gif
+			div.col-lg-4.col-md-4.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1.col-xs-offset-1.img-gif
+				img.img-responsive
+			///-Gif
+
+
+			//texto & compartir
+
+			div.col-lg-3.col-md-3.col-sm-12.col-xs-12.col-compartir
+
+				p.text-comparte Comparte esta invitación entre amigas:
+				a.btn.btn-fb(href="#", role="button")
+					include ../../publication/images/fb.svg
+					span Facebook
+				a.btn.btn-tw(href="#", role="button")
+					include ../../publication/images/twitter.svg
+					span Twitter
+
+			//texto & compartir
+
+			div.helado
+				//- +image('pink-static.png', 'Pink')(class="img-responsive")
+				canvas#black
+
+		div.row.row-btn
+			div.col-lg-7.col-md-7.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1
+				a.btn.btn-reload(href="#", role="button")
+					include ../../publication/images/reload.svg
+					| ver otro momento black
+				a.btn.btn-ver-pink(href="pink.html", role="button")
+					include ../../publication/images/paleta.svg
+					| ver momentos pink
+
+
+
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

@@ -1,0 +1,104 @@
+.page-magnum-pink-black
+	h1.text
+		&-center
+			font-size 2.1rem
+			margin auto
+			max-width 30rem
+			
+			span
+				display block
+				font-size 3.1rem
+				
+		&-home
+			position absolute
+			top 40%
+			left 50%
+			transform translate3d(-50%,0,0)
+		
+		&-section
+			left 42%
+			position absolute
+
+	.col-compartir
+		
+		p
+			font-size 1.6rem
+			text-transform uppercase
+				
+	.helado
+		border 1px solid #fff
+		centrar(0.5rem,25rem)
+		
+		.img-responsive
+			centrar(0,16rem)
+		
+		canvas
+			height auto
+			width 100%
+
+	
+	.img-gif
+		position relative
+		
+		&:before
+			border 2px solid #fff
+			content ' '
+			cuadrado(100%)
+			display block
+			left 0
+			max-height 60rem
+			max-width @max-height
+			position absolute
+			top @left
+			z-index 10
+			
+		.img-responsive
+			margin-left -3%
+			margin-bottom abs(@margin-left)
+			margin-top @margin-left
+			position relative
+			
+			// &:before
+			// 	background-color #f3f3f3
+			// 	border 0
+			// 	color $Purpura
+			// 	content '\e031'
+			// 	font-family $Icons
+			// 	display block
+			// 	font-size 1.9rem
+			// 	padding 25%
+			// 	height 100%
+			// 	position absolute
+			// 	width @height
+			// 	z-index 0
+
+	.menu-dummie
+		height 12rem
+		
+
+	.row-btn
+		.btn
+			display inline-block
+			max-width 49.5%
+			width 49.5%
+			
+			&-reload
+				margin-right 0.4%
+				
+			&-ver-black
+				margin-left @margin-right
+				
+
+.page
+	&-black, &-pink
+		.helado
+			border none
+			position absolute
+			right 0
+			bottom -16rem
+			width 27rem
+			
+
+			.img-responsive
+				width 100%
+			

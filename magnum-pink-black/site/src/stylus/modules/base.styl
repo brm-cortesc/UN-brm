@@ -1,0 +1,45 @@
+::selection /* WebKit/Blink Browsers */
+	background #fff
+	color white
+	text-shadow 0px 0px 5px white
+
+::-moz-selection /* Gecko Browsers */
+	background #fff
+	color white
+	text-shadow 0px 0px 5px white
+	
+
+// :root
+// 	font-size calc(1vw + 1vh + .25vmin) //fuente responsive
+
+::-webkit-file-upload-button
+	cursor pointer
+
+.page-magnum-pink-black
+	background-color $Purpura
+	background-attachment fixed, scroll
+	background-image url('../images/pattern.svg'), linear-gradient(to right, $Rosa 50%, $Purpura 50%)
+	background-position 270% 50%, 0
+	background-repeat no-repeat, repeat
+	background-size 110%, auto
+	color #fff
+	font-family $FontStack
+	font-size 1.4rem
+	font-weight $Light
+
+	a
+		transitionBase(0.3s)
+			
+		img
+			border 0
+			outline 0
+
+	button,input, select
+		border none
+		&:active, &:hover, &:focus
+			outline 0 !important
+			outline none !important
+
+	h1,h2,h3,h4,h5,h6
+		font-weight $Bold
+		text-transform uppercase

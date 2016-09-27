@@ -1,0 +1,66 @@
+.page-magnum-pink-black
+
+	.btn
+		border 2px solid #fff
+		border-radius 0 !important
+		box-sizing border-box
+		color #fff
+		display block 
+		font-size 1.6rem
+		font-weight $Bold
+		margin 1rem auto 0
+		max-width 31rem
+		white-space normal
+		text-transform uppercase
+		transitionBase(0.3s)
+		
+		svg
+			display inline
+			vertical-align middle
+			
+			path
+				fill transparent
+				stroke #fff
+				stroke-width 1
+				transition fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s
+				
+
+		&:active, &:hover
+			color #fff
+			outline 0 !important
+			outline none !important
+			
+			svg 
+			
+				path
+					fill #fff
+					stroke-width 0
+		
+
+		&-fb, &-tw
+			padding 2rem 1rem
+			position relative 
+			svg
+				left 0.5rem
+				position absolute
+				top @left
+				
+		&-tw
+			svg
+				top 1.2rem
+				
+			
+		&-ver-black
+			background-color $Purpura
+			
+			&:active, &:hover
+				background-color lighten(@background-color, 20%)
+			
+		&-fb, &-tw, &-ver-pink, &-reload
+			background-color $Rosa
+				
+			&:hover
+				background-color darken(@background-color, 20%)
+				
+		&-ver-pink
+			background-color $Rosa !important

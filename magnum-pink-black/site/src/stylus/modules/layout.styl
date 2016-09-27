@@ -1,0 +1,46 @@
+.page
+	
+	&-black 
+		background-color $Purpura
+		background-attachment fixed, scroll
+		background-image url('../images/pattern.svg')
+		background-position 270% 50%, 0
+		background-repeat no-repeat, repeat
+		background-size 110%, auto
+		opacity 0
+		
+		.btn
+			background-color $Purpura
+			
+
+		.helado
+			width 28.5rem
+		
+
+	&-magnum-pink-black
+		.row
+			margin 0 auto
+			max-width $SiteWidth
+			position relative
+			
+
+			for x in (1..12)
+			
+				.col-lg-{x}, .col-md-{x}, .col-sm-{x}, .col-xs-{x}
+					padding-left $Gutter
+					padding-right $Gutter
+					transition width ease-in-out 0.3s
+				
+
+	&-pink
+		background-color $Rosa
+		background-attachment fixed, scroll
+		background-image url('../images/pattern.svg')
+		background-position 270% 50%, 0
+		background-repeat no-repeat, repeat
+		background-size 110%, auto
+		opacity 0
+		
+
+		.helado
+			width 26.4rem

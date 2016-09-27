@@ -1,0 +1,744 @@
+/*
+  pink-black
+  @version v0.1.0
+  @link https://github.com/cortesc/HTML
+  @link Cristian Cortés - cristian.cortes@brm.com.co
+  @license 
+ Tue Sep 27 2016 09:52:09 GMT-0500 (COT)
+ !*/
+::selection {
+  background: #fff;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+::-moz-selection {
+  background: #fff;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+.page-magnum-pink-black {
+  background-color: #21111c;
+  background-attachment: fixed, scroll;
+  background-image: url("../images/pattern.svg"), -o-linear-gradient(left, #f04883 50%, #21111c 50%);
+  background-image: url("../images/pattern.svg"), -ms-linear-gradient(left, #f04883 50%, #21111c 50%);
+  background-image: url("../images/pattern.svg"), -webkit-linear-gradient(left, #f04883 50%, #21111c 50%);
+  background-image: url("../images/pattern.svg"), -moz-linear-gradient(left, #f04883 50%, #21111c 50%);
+  background-image: url("../images/pattern.svg"), linear-gradient(to right, #f04883 50%, #21111c 50%);
+  background-position: 270% 50%, 0;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-size: 110%, auto;
+  -moz-background-size: 110%, auto;
+  background-size: 110%, auto;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.page-magnum-pink-black a {
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.page-magnum-pink-black a img {
+  border: 0;
+  outline: 0;
+}
+.page-magnum-pink-black button,
+.page-magnum-pink-black input,
+.page-magnum-pink-black select {
+  border: none;
+}
+.page-magnum-pink-black button:active,
+.page-magnum-pink-black input:active,
+.page-magnum-pink-black select:active,
+.page-magnum-pink-black button:hover,
+.page-magnum-pink-black input:hover,
+.page-magnum-pink-black select:hover,
+.page-magnum-pink-black button:focus,
+.page-magnum-pink-black input:focus,
+.page-magnum-pink-black select:focus {
+  outline: 0 !important;
+  outline: none !important;
+}
+.page-magnum-pink-black h1,
+.page-magnum-pink-black h2,
+.page-magnum-pink-black h3,
+.page-magnum-pink-black h4,
+.page-magnum-pink-black h5,
+.page-magnum-pink-black h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-magnum-pink-black .btn {
+  border: 2px solid #fff;
+  border-radius: 0 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1rem auto 0;
+  max-width: 31rem;
+  white-space: normal;
+  text-transform: uppercase;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.page-magnum-pink-black .btn svg {
+  display: inline;
+  vertical-align: middle;
+}
+.page-magnum-pink-black .btn svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1;
+  -o-transition: fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s;
+  -ms-transition: fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s;
+  -webkit-transition: fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s;
+  -moz-transition: fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s;
+  transition: fill ease-in-out 0.3s, stroke-width ease-in-out 0.4s;
+}
+.page-magnum-pink-black .btn:active,
+.page-magnum-pink-black .btn:hover {
+  color: #fff;
+  outline: 0 !important;
+  outline: none !important;
+}
+.page-magnum-pink-black .btn:active svg path,
+.page-magnum-pink-black .btn:hover svg path {
+  fill: #fff;
+  stroke-width: 0;
+}
+.page-magnum-pink-black .btn-fb,
+.page-magnum-pink-black .btn-tw {
+  padding: 2rem 1rem;
+  position: relative;
+}
+.page-magnum-pink-black .btn-fb svg,
+.page-magnum-pink-black .btn-tw svg {
+  left: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+}
+.page-magnum-pink-black .btn-tw svg {
+  top: 1.2rem;
+}
+.page-magnum-pink-black .btn-ver-black {
+  background-color: #21111c;
+}
+.page-magnum-pink-black .btn-ver-black:active,
+.page-magnum-pink-black .btn-ver-black:hover {
+  background-color: #5e3050;
+}
+.page-magnum-pink-black .btn-fb,
+.page-magnum-pink-black .btn-tw,
+.page-magnum-pink-black .btn-ver-pink,
+.page-magnum-pink-black .btn-reload {
+  background-color: #f04883;
+}
+.page-magnum-pink-black .btn-fb:hover,
+.page-magnum-pink-black .btn-tw:hover,
+.page-magnum-pink-black .btn-ver-pink:hover,
+.page-magnum-pink-black .btn-reload:hover {
+  background-color: #e7135d;
+}
+.page-magnum-pink-black .btn-ver-pink {
+  background-color: #f04883 !important;
+}
+.page-magnum-pink-black h1.text-center {
+  font-size: 2.1rem;
+  margin: auto;
+  max-width: 30rem;
+}
+.page-magnum-pink-black h1.text-center span {
+  display: block;
+  font-size: 3.1rem;
+}
+.page-magnum-pink-black h1.text-home {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -o-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+.page-magnum-pink-black h1.text-section {
+  left: 42%;
+  position: absolute;
+}
+.page-magnum-pink-black .col-compartir p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.page-magnum-pink-black .helado {
+  border: 1px solid #fff;
+  margin: 0.5rem auto;
+  width: 25rem;
+}
+.page-magnum-pink-black .helado .img-responsive {
+  margin: 0 auto;
+  width: 16rem;
+}
+.page-magnum-pink-black .helado canvas {
+  height: auto;
+  width: 100%;
+}
+.page-magnum-pink-black .img-gif {
+  position: relative;
+}
+.page-magnum-pink-black .img-gif:before {
+  border: 2px solid #fff;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  display: block;
+  left: 0;
+  max-height: 60rem;
+  max-width: 60rem;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.page-magnum-pink-black .img-gif .img-responsive {
+  margin-left: -3%;
+  margin-bottom: 3%;
+  margin-top: -3%;
+  position: relative;
+}
+.page-magnum-pink-black .menu-dummie {
+  height: 12rem;
+}
+.page-magnum-pink-black .row-btn .btn {
+  display: inline-block;
+  max-width: 49.5%;
+  width: 49.5%;
+}
+.page-magnum-pink-black .row-btn .btn-reload {
+  margin-right: 0.4%;
+}
+.page-magnum-pink-black .row-btn .btn-ver-black {
+  margin-left: ;
+}
+.page-black .helado,
+.page-pink .helado {
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: -16rem;
+  width: 27rem;
+}
+.page-black .helado .img-responsive,
+.page-pink .helado .img-responsive {
+  width: 100%;
+}
+.page-black {
+  background-color: #21111c;
+  background-attachment: fixed, scroll;
+  background-image: url("../images/pattern.svg");
+  background-position: 270% 50%, 0;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-size: 110%, auto;
+  -moz-background-size: 110%, auto;
+  background-size: 110%, auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.page-black .btn {
+  background-color: #21111c;
+}
+.page-black .helado {
+  width: 28.5rem;
+}
+.page-magnum-pink-black .row {
+  margin: 0 auto;
+  max-width: 128rem;
+  position: relative;
+}
+.page-magnum-pink-black .row .col-lg-1,
+.page-magnum-pink-black .row .col-md-1,
+.page-magnum-pink-black .row .col-sm-1,
+.page-magnum-pink-black .row .col-xs-1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-2,
+.page-magnum-pink-black .row .col-md-2,
+.page-magnum-pink-black .row .col-sm-2,
+.page-magnum-pink-black .row .col-xs-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-3,
+.page-magnum-pink-black .row .col-md-3,
+.page-magnum-pink-black .row .col-sm-3,
+.page-magnum-pink-black .row .col-xs-3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-4,
+.page-magnum-pink-black .row .col-md-4,
+.page-magnum-pink-black .row .col-sm-4,
+.page-magnum-pink-black .row .col-xs-4 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-5,
+.page-magnum-pink-black .row .col-md-5,
+.page-magnum-pink-black .row .col-sm-5,
+.page-magnum-pink-black .row .col-xs-5 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-6,
+.page-magnum-pink-black .row .col-md-6,
+.page-magnum-pink-black .row .col-sm-6,
+.page-magnum-pink-black .row .col-xs-6 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-7,
+.page-magnum-pink-black .row .col-md-7,
+.page-magnum-pink-black .row .col-sm-7,
+.page-magnum-pink-black .row .col-xs-7 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-8,
+.page-magnum-pink-black .row .col-md-8,
+.page-magnum-pink-black .row .col-sm-8,
+.page-magnum-pink-black .row .col-xs-8 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-9,
+.page-magnum-pink-black .row .col-md-9,
+.page-magnum-pink-black .row .col-sm-9,
+.page-magnum-pink-black .row .col-xs-9 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-10,
+.page-magnum-pink-black .row .col-md-10,
+.page-magnum-pink-black .row .col-sm-10,
+.page-magnum-pink-black .row .col-xs-10 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-11,
+.page-magnum-pink-black .row .col-md-11,
+.page-magnum-pink-black .row .col-sm-11,
+.page-magnum-pink-black .row .col-xs-11 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-magnum-pink-black .row .col-lg-12,
+.page-magnum-pink-black .row .col-md-12,
+.page-magnum-pink-black .row .col-sm-12,
+.page-magnum-pink-black .row .col-xs-12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -o-transition: width ease-in-out 0.3s;
+  -ms-transition: width ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s;
+  -moz-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-pink {
+  background-color: #f04883;
+  background-attachment: fixed, scroll;
+  background-image: url("../images/pattern.svg");
+  background-position: 270% 50%, 0;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-size: 110%, auto;
+  -moz-background-size: 110%, auto;
+  background-size: 110%, auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.page-pink .helado {
+  width: 26.4rem;
+}
+@media (min-width: 310px) {
+  .page-magnum-pink-black h1.text-home,
+  .page-magnum-pink-black h1.text-section {
+    font-size: 1.2rem;
+    max-width: 80%;
+    position: initial;
+    -o-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+  .page-magnum-pink-black h1.text-home span,
+  .page-magnum-pink-black h1.text-section span {
+    font-size: 1.9rem;
+  }
+  .page-magnum-pink-black h1.text-section {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  .page-magnum-pink-black .btn-ver-black,
+  .page-magnum-pink-black .btn-ver-pink {
+    font-size: 1.2rem;
+  }
+  .page-magnum-pink-black .btn-ver-black svg,
+  .page-magnum-pink-black .btn-ver-pink svg {
+    display: block;
+    margin: auto;
+  }
+  .page-magnum-pink-black .col-xs-offset-1 {
+    margin-left: 0;
+  }
+  .page-magnum-pink-black .col-compartir {
+    margin-top: 0;
+    text-align: center;
+  }
+  .page-magnum-pink-black .col-compartir p {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn span {
+    display: none;
+  }
+  .page-magnum-pink-black .col-compartir .btn svg {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    position: initial;
+  }
+  .page-magnum-pink-black .col-compartir .btn svg path {
+    fill: #fff;
+    stroke: 0;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb svg {
+    max-width: 50%;
+  }
+  .page-magnum-pink-black .menu-dummie {
+    height: 12.2rem;
+  }
+  .page-magnum-pink-black .helado {
+    max-width: 100%;
+  }
+  .page-magnum-pink-black .helado .img-responsive {
+    width: 6.8rem;
+  }
+  .page-magnum-pink-black .row-btn .btn {
+    display: block;
+    font-size: 1.4rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  .page-magnum-pink-black .row-btn .btn svg {
+    display: inline;
+  }
+  .page-black .helado,
+  .page-pink .helado {
+    bottom: initial;
+    top: -3rem;
+    right: -1rem;
+    width: 8rem;
+    z-index: 11;
+  }
+}
+@media (min-width: 400px) {
+  .page-magnum-pink-black h1.text-home,
+  .page-magnum-pink-black h1.text-section {
+    font-size: 1.6rem;
+    max-width: 30rem;
+  }
+  .page-magnum-pink-black h1.text-home span,
+  .page-magnum-pink-black h1.text-section span {
+    font-size: 2.6rem;
+  }
+  .page-magnum-pink-black .col-compartir {
+    margin-top: 1.6rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb {
+    margin-left: 0.4rem;
+  }
+  .page-magnum-pink-black .helado .img-responsive {
+    width: 10rem;
+  }
+}
+@media (min-width: 440px) {
+  .page-magnum-pink-black .btn-ver-black svg,
+  .page-magnum-pink-black .btn-ver-pink svg {
+    display: initial;
+  }
+  .page-magnum-pink-black .col-compartir {
+    margin-top: 1.6rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb {
+    margin-left: 0.8rem;
+  }
+}
+@media (min-width: 600px) {
+  .page-magnum-pink-black .col-compartir {
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+  .page-magnum-pink-black .col-compartir p {
+    font-size: 1.6rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb {
+    margin-left: 1.8rem;
+  }
+  .page-magnum-pink-black .col-xs-offset-1 {
+    margin-left: 2%;
+  }
+  .page-magnum-pink-black .helado .img-responsive {
+    width: 16rem;
+  }
+  .page-black .helado,
+  .page-pink .helado {
+    width: 11rem;
+  }
+}
+@media (min-width: 700px) {
+  .page-black .helado,
+  .page-pink .helado {
+    top: -7rem;
+    width: 16rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-wapp {
+    display: none;
+  }
+  .page-magnum-pink-black .menu-dummie {
+    border: 1px solid #008000;
+    height: 10.3rem;
+  }
+  .page-magnum-pink-black .menu-dummie + .row {
+    margin-top: 6.4rem;
+  }
+  .page-magnum-pink-black .row-btn .btn {
+    display: inline-block;
+    max-width: 49.5%;
+    width: 49.5%;
+  }
+}
+@media (min-width: 800px) {
+  .page-magnum-pink-black .col-xs-offset-1 {
+    margin-left: 1%;
+  }
+  .page-magnum-pink-black .col-compartir {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: left;
+  }
+  .page-magnum-pink-black .col-compartir p {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    height: 3rem;
+    width: 3rem;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb {
+    margin-left: 0.5rem;
+  }
+  .page-magnum-pink-black .menu-dummie {
+    height: 12rem;
+  }
+  .page-magnum-pink-black .row-btn .col-sm-12 {
+    width: 100%;
+  }
+  .page-black h1.text-section,
+  .page-pink h1.text-section {
+    left: 53%;
+    position: absolute;
+  }
+  .page-black .col-sm-12,
+  .page-pink .col-sm-12 {
+    margin-left: 0;
+    width: 50%;
+  }
+  .page-black .helado,
+  .page-pink .helado {
+    bottom: initial;
+    top: -6.9rem;
+    width: 11rem;
+  }
+}
+@media (min-width: 910px) {
+  .page-black .helado,
+  .page-pink .helado {
+    width: 15rem;
+  }
+  .page-magnum-pink-black .col-compartir {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    text-align: left;
+  }
+  .page-magnum-pink-black .col-compartir .btn {
+    font-size: 1.6rem;
+    height: auto;
+    margin: 1rem 0 0;
+    max-width: 31rem;
+    width: auto;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb,
+  .page-magnum-pink-black .col-compartir .btn-tw {
+    display: block;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb span,
+  .page-magnum-pink-black .col-compartir .btn-tw span {
+    display: block;
+  }
+  .page-magnum-pink-black .col-compartir .btn-fb svg,
+  .page-magnum-pink-black .col-compartir .btn-tw svg {
+    left: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+  }
+}
+@media (min-width: 1010px) {
+  .page-magnum-pink-black h1.text-home {
+    font-size: 2.1rem;
+    max-width: 28rem;
+    position: absolute;
+    -o-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  .page-magnum-pink-black h1.text-home span {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1100px) {
+  .page-magnum-pink-black h1.text-home,
+  .page-magnum-pink-black h1.text-section {
+    font-size: 2.1rem;
+    max-width: 30rem;
+  }
+  .page-magnum-pink-black h1.text-home span,
+  .page-magnum-pink-black h1.text-section span {
+    font-size: 3.1rem;
+  }
+  .page-magnum-pink-black .col-compartir p {
+    font-size: 1.6rem;
+  }
+  .page-magnum-pink-black .row-btn .col-sm-12 {
+    width: 75.5%;
+  }
+  .page-black .helado,
+  .page-pink .helado {
+    bottom: 22.4rem;
+    width: 16rem;
+  }
+}
+@media (min-width: 1280px) {
+  .page-black .helado,
+  .page-pink .helado {
+    bottom: 5.2rem;
+    width: 23rem;
+  }
+  .page-black .helado .img-responsive,
+  .page-pink .helado .img-responsive {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .page-magnum-pink-black .menu-dummie {
+    height: 12rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
