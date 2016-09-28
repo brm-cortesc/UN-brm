@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Tue Sep 27 2016 18:31:28 GMT-0500 (COT)
+ Wed Sep 28 2016 06:11:44 GMT-0500 (COT)
  !*/
 ::selection {
   background: #fff;
@@ -771,6 +771,17 @@
   }
   .page-magnum-pink-black .col-compartir p {
     font-size: 1.6rem;
+  }
+  .page-magnum-pink-black .helado #black-home {
+    display: block;
+    margin: auto;
+    max-width: 71.9%;
+  }
+  .page-magnum-pink-black .helado #pink-home {
+    max-width: 67%;
+  }
+  .page-magnum-pink-black .row-btn {
+    margin-bottom: 3rem;
   }
   .page-magnum-pink-black .row-btn .col-sm-12 {
     width: 75.5%;
