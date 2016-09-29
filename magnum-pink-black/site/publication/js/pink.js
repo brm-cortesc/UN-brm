@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		});
 
 	//Carga del sprite
-	sprite('pink', 'images/pink-sprite.png', 264, 660, 10824, 41,3);
+	sprite('pink', 'images/pink-sprite.png', 264, 660, 10824, 41,2);
 
 
 	//Array de gifs

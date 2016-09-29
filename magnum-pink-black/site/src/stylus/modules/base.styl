@@ -15,17 +15,27 @@
 ::-webkit-file-upload-button
 	cursor pointer
 
-.page-magnum-pink-black
+.page-pink-black
 	background-color $Purpura
-	background-attachment fixed, scroll
-	background-image url('../images/pattern.svg'), linear-gradient(to right, $Rosa 50%, $Purpura 50%)
-	background-position 270% 50%, 0
-	background-repeat no-repeat, repeat
-	background-size 110%, auto
+	background-image linear-gradient(to right, $Rosa 50%, $Purpura 50%)
 	color #fff
 	font-family $FontStack
 	font-size 1.4rem
 	font-weight $Light
+	position relative
+	
+	&::before
+		path('pattern.svg')
+		background-attachment fixed 
+		background-position 270% 50% 
+		background-repeat no-repeat 
+		background-size 110% 
+		content ''
+		pointer-events none
+		centrarAb()
+		cuadrado(100%)
+		z-index -1
+		
 
 	a
 		transitionBase(0.3s)

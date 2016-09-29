@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
 		}else if( $(this).hasClass('btn-ver-pink') ){
 			
-			sprite('pink-home', 'images/pink-sprite.png', 264, 660, 10824, 41,3);
+			sprite('pink-home', 'images/pink-sprite.png', 264, 660, 10824, 41,2);
 		}
 
 	});
@@ -47,9 +47,9 @@ jQuery(document).ready(function($) {
 			
 			setInterval(function () {
 				
-				$('.page-magnum-pink-black').css({
+				$('.page-pink-black').css({
 					'background-color': '#f04883',
-					'background-image': 'url("../images/pattern.svg"), linear-gradient(to right, #f04883 '+total+'%, #21111c 50%)'
+					'background-image': 'linear-gradient(to right, #f04883 '+total+'%, #21111c 50%)'
 				});
 
 				total++
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
 			
 			setInterval(function () {
 				
-				$('.page-magnum-pink-black').css('background-image', 'url("../images/pattern.svg"), linear-gradient(to right, #f04883 '+total+'%, #21111c '+total+'%)');
+				$('.page-pink-black').css('background-image', 'linear-gradient(to right, #f04883 '+total+'%, #21111c '+total+'%)');
 
 				total--
 				

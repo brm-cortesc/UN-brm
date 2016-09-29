@@ -12,10 +12,19 @@ if debug == true
 		script(src='js/black.js')
 
 	if titulo == "Home"
-		script(src='js/init.js')
+		//- script(src='js/init.js')
 		script(src='js/pink-black.js')
 
 
 else
 	script(src="js/libs.min.js")
-	script(src='js/pink-black.js')
+	script(src='js/sprite.js')
+
+	if titulo == "Pink"
+		script(src='js/pink.js')
+	if titulo == "Black"
+		script(src='js/black.js')
+
+	if titulo == "Home"
+		script(src='js/init.js')
+		script(src='js/pink-black.js')
