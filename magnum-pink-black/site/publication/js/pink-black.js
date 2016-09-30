@@ -1,5 +1,7 @@
-jQuery(document).ready(function($) {
+//Checa si es safari//
+var isSafari = !!navigator.userAgent.match(/safari/i) && !navigator.userAgent.match(/chrome/i) && typeof document.body.style.webkitFilter !== "undefined" && !window.chrome;
 
+jQuery(document).ready(function($) {
 	//Cargamos los sprites estáticos
 	sprite('black-home', 'images/black-sprite.png', 264, 610, 8448, 1,1);
 
@@ -40,6 +42,11 @@ jQuery(document).ready(function($) {
 		
 		e.preventDefault();
 
+		if(isSafari ){
+			window.location = "pink.html";
+
+		}
+
 		//animacion al seleccionar la sección
 		var total = 50;
 
@@ -75,6 +82,11 @@ jQuery(document).ready(function($) {
 	$('.btn-ver-black').click(function(e) {
 		
 		e.preventDefault();
+
+		if(isSafari ){
+			window.location = "black.html";
+
+		}
 
 		//animacion al seleccionar la sección
 

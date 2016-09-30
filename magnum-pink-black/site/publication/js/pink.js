@@ -11,21 +11,21 @@ jQuery(document).ready(function($) {
 
 	//Array de gifs
 	var gifs =[
-		['images/gif/pink/pink-1.gif','Some random text 1'],
-		['images/gif/pink/pink-2.gif','Some random text 2'],
-		['images/gif/pink/pink-3.gif','Some random text 3'],
-		['images/gif/pink/pink-4.gif','Some random text 4'],
-		['images/gif/pink/pink-5.gif','Some random text 5'],
-		['images/gif/pink/pink-6.gif','Some random text 6'],
-		['images/gif/pink/pink-7.gif','Some random text 7'],
-		['images/gif/pink/pink-8.gif','Some random text 8'],
-		['images/gif/pink/pink-9.gif','Some random text 9'],
-		['images/gif/pink/pink-10.gif','Some random text 10'],
-		['images/gif/pink/pink-11.gif','Some random text 11'],
-		['images/gif/pink/pink-12.gif','Some random text 12'],
-		['images/gif/pink/pink-13.gif','Some random text 13'],
-		['images/gif/pink/pink-14.gif','Some random text 14'],
-		['images/gif/pink/pink-15.gif','Some random text 15']
+		['images/gif/pink/pink-1.gif','¡Invítala a ver esa película!'],
+		['images/gif/pink/pink-2.gif','¡Invita a tu mejor amiga!'],
+		['images/gif/pink/pink-3.gif','Disfrútalo con...'],
+		['images/gif/pink/pink-4.gif','¡Ve con tus amigas!'],
+		['images/gif/pink/pink-5.gif','No bailes sola invita a alguien'],
+		['images/gif/pink/pink-6.gif','¡Compártelo con los dormilones!'],
+		['images/gif/pink/pink-7.gif','¿Con quién te tomarás la próxima foto?'],
+		['images/gif/pink/pink-8.gif','Invítalos a todos'],
+		['images/gif/pink/pink-9.gif','¡Invítalos a bailar!'],
+		['images/gif/pink/pink-10.gif','¿A quien invitarás a la película?'],
+		['images/gif/pink/pink-11.gif','Compartelo con tus amigos'],
+		['images/gif/pink/pink-12.gif','Comparte una tarde de placer'],
+		['images/gif/pink/pink-13.gif','¡Ve con tus amigas!'],
+		['images/gif/pink/pink-14.gif','¡Comparte una tarde de descanso!'],
+		['images/gif/pink/pink-15.gif','¡Anda con tu amiga de shopping!']
 	];
 
 	var imgContainer = $('.img-gif img'),

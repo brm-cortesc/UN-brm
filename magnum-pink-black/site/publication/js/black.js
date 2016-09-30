@@ -11,21 +11,21 @@ jQuery(document).ready(function($) {
 
 	//Array de gifs
 	var gifs =[
-		['images/gif/black/black-1.gif','Some random text 1'],
-		['images/gif/black/black-2.gif','Some random text 2'],
-		['images/gif/black/black-3.gif','Some random text 3'],
-		['images/gif/black/black-4.gif','Some random text 4'],
-		['images/gif/black/black-5.gif','Some random text 5'],
-		['images/gif/black/black-6.gif','Some random text 6'],
-		['images/gif/black/black-7.gif','Some random text 7'],
-		['images/gif/black/black-8.gif','Some random text 8'],
-		['images/gif/black/black-9.gif','Some random text 9'],
-		['images/gif/black/black-10.gif','Some random text 10'],
-		['images/gif/black/black-11.gif','Some random text 11'],
-		['images/gif/black/black-12.gif','Some random text 12'],
-		['images/gif/black/black-13.gif','Some random text 13'],
-		['images/gif/black/black-14.gif','Some random text 14'],
-		['images/gif/black/black-15.gif','Some random text 15']
+		['images/gif/black/black-1.gif','¡Compartelo con tu confidente!'],
+		['images/gif/black/black-2.gif','¿Con quien brindaras?'],
+		['images/gif/black/black-3.gif','¡Ve de shopping con tus amigas! '],
+		['images/gif/black/black-4.gif','¡Comparte este dulce placer!'],
+		['images/gif/black/black-5.gif','¡Comparte ese placer! '],
+		['images/gif/black/black-6.gif','¡Es tiempo de shopping con amigas!'],
+		['images/gif/black/black-7.gif','¡Invita a tus amigos de farra!'],
+		['images/gif/black/black-8.gif','S¡Vámonos de compras!'],
+		['images/gif/black/black-9.gif','Comparte una Magnun con...'],
+		['images/gif/black/black-10.gif','Comparte una tarde de helado'],
+		['images/gif/black/black-11.gif','¡Invita a tus amigas!'],
+		['images/gif/black/black-12.gif','¡Comparte un pequeño momento de placer!'],
+		['images/gif/black/black-13.gif','¡Compartelo con tus amigas!'],
+		['images/gif/black/black-14.gif','Comparte este momento de placer'],
+		['images/gif/black/black-15.gif','¡Practícalo con tus amigas!']
 	];
 
 	var imgContainer = $('.img-gif img'),
