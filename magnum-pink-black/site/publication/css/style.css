@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Wed Oct 05 2016 17:24:38 GMT-0500 (COT)
+ Wed Oct 05 2016 17:49:38 GMT-0500 (COT)
  !*/
 ::selection {
   background: #fff;
@@ -556,8 +556,10 @@
   }
   .page-pink-black .row-btn .btn svg {
     display: inline-block;
-    margin-left: -4.5rem;
-    margin-right: 4.5rem;
+    margin-left: -2.5rem;
+    margin-right: 2.5rem;
+    height: 4rem;
+    width: 4rem;
   }
   .page-black .helado,
   .page-pink .helado {
@@ -606,6 +608,13 @@
   }
   .page-pink-black .col-compartir .btn-fb {
     margin-left: 0.8rem;
+  }
+  .page-pink-black .row-btn .btn svg {
+    display: inline-block;
+    margin-left: -2.5rem;
+    margin-right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
   }
   .page-pink-black .helado #pink-home {
     display: block;
@@ -828,6 +837,13 @@
 @media (min-width: 1200px) {
   .page-pink-black .loader {
     width: 93%;
+  }
+  .page-pink-black .menu-dummie {
+    height: 10.3rem;
+  }
+  .page-pink-black .menu-dummie + .row {
+    margin-top: 3rem;
+    padding-bottom: 3.3%;
   }
 }
 @media (min-width: 1280px) {
