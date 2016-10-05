@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Thu Sep 29 2016 12:01:02 GMT-0500 (COT)
+ Wed Oct 05 2016 17:24:38 GMT-0500 (COT)
  !*/
 ::selection {
   background: #fff;
@@ -173,6 +173,9 @@
 .page-pink-black .btn-ver-pink {
   background-color: #f04883 !important;
 }
+.page-pink-black article .helado {
+  cursor: pointer;
+}
 .page-pink-black h1.text-center {
   font-size: 2.1rem;
   margin: auto;
@@ -219,20 +222,17 @@
 .page-pink-black .img-gif::before {
   border: 2px solid #fff;
   content: ' ';
-  height: 100%;
-  width: 100%;
   display: block;
-  left: 0;
-  max-height: 60rem;
-  max-width: 60rem;
+  height: 100%;
+  left: 4px;
+  max-height: 53rem;
+  max-width: 53rem;
   position: absolute;
   top: 0;
+  width: 98%;
   z-index: 10;
 }
 .page-pink-black .img-gif .img-responsive {
-  margin-left: -3%;
-  margin-bottom: 3%;
-  margin-top: -3%;
   position: relative;
 }
 .page-pink-black .loader {
@@ -245,7 +245,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  width: 94%;
+  width: 85%;
 }
 .page-pink-black .loader .status {
   bottom: 0;
@@ -258,6 +258,7 @@
   width: 20%;
 }
 .page-pink-black .loader .status h2 {
+  display: none;
   position: absolute;
   text-align: center;
   top: 25%;
@@ -532,6 +533,9 @@
   .page-pink-black .col-compartir .btn-fb svg {
     max-width: 50%;
   }
+  .page-pink-black .col-compartir .loader {
+    width: 100%;
+  }
   .page-pink-black .menu-dummie {
     height: 12.2rem;
   }
@@ -636,6 +640,9 @@
   .page-pink-black .helado .img-responsive {
     width: 16rem;
   }
+  .page-pink-black .loader {
+    width: 94%;
+  }
   .page-black .helado,
   .page-pink .helado {
     width: 11rem;
@@ -647,14 +654,23 @@
     top: -7rem;
     width: 16rem;
   }
+  .page-black .menu-dummie + .row,
+  .page-pink .menu-dummie + .row {
+    margin-top: 6.4rem;
+    padding-bottom: 0 !important;
+  }
   .page-pink-black .col-compartir .btn-wapp {
     display: none;
+  }
+  .page-pink-black .loader {
+    width: 81%;
   }
   .page-pink-black .menu-dummie {
     height: 10.3rem;
   }
   .page-pink-black .menu-dummie + .row {
     margin-top: 6.4rem;
+    padding-bottom: 3.3%;
   }
   .page-pink-black .row-btn .btn {
     display: inline-block;
@@ -669,7 +685,7 @@
   .page-pink-black .col-compartir {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 53%;
     text-align: left;
   }
   .page-pink-black .col-compartir p {
@@ -683,6 +699,9 @@
   .page-pink-black .col-compartir .btn-fb {
     margin-left: 0.5rem;
   }
+  .page-pink-black .loader {
+    width: 100%;
+  }
   .page-pink-black .menu-dummie {
     height: 12rem;
   }
@@ -691,13 +710,13 @@
   }
   .page-black h1.text-section,
   .page-pink h1.text-section {
-    left: 50%;
+    left: 53%;
     position: absolute;
   }
   .page-black .col-sm-12,
   .page-pink .col-sm-12 {
     margin-left: 0;
-    width: 50%;
+    width: 48%;
   }
   .page-black .helado,
   .page-pink .helado {
@@ -707,6 +726,10 @@
   }
 }
 @media (min-width: 910px) {
+  .page-black h1.text-section,
+  .page-pink h1.text-section {
+    left: 50%;
+  }
   .page-black .helado,
   .page-pink .helado {
     width: 15rem;
@@ -716,6 +739,9 @@
     left: 50%;
     bottom: 0;
     text-align: left;
+  }
+  .page-pink-black .col-compartir p {
+    max-width: 30rem;
   }
   .page-pink-black .col-compartir .btn {
     font-size: 1.6rem;
@@ -759,6 +785,9 @@
   .page-pink-black h1.text-home span {
     font-size: 2.6rem;
   }
+  .page-pink-black .loader {
+    width: 100%;
+  }
 }
 @media (min-width: 1100px) {
   .page-pink-black h1.text-home,
@@ -776,21 +805,29 @@
   .page-pink-black .helado #black-home {
     display: block;
     margin: auto;
-    max-width: 71.9%;
+    max-width: 66.9%;
   }
   .page-pink-black .helado #pink-home {
-    max-width: 67%;
+    max-width: 62%;
   }
   .page-pink-black .row-btn {
     margin-bottom: 3rem;
   }
   .page-pink-black .row-btn .col-sm-12 {
-    width: 75.5%;
+    width: 80.7%;
+  }
+  .page-pink-black .loader {
+    width: 88%;
   }
   .page-black .helado,
   .page-pink .helado {
     bottom: 22.4rem;
     width: 16rem;
+  }
+}
+@media (min-width: 1200px) {
+  .page-pink-black .loader {
+    width: 93%;
   }
 }
 @media (min-width: 1280px) {
@@ -809,6 +846,12 @@
   }
   .page-pink .helado {
     width: 26.4rem;
+  }
+  .page-pink-black .loader {
+    width: 85%;
+  }
+  .page-pink-black .row-btn .col-sm-12 {
+    width: 75.5%;
   }
 }
 @media (min-width: 1600px) {

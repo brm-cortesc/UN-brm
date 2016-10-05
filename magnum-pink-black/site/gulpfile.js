@@ -30,7 +30,7 @@ var banner = ['/*!',
 ].join('\n');
 
 //arreglo concatenar JS en el orden en el que se cargan
-var jsLibs = ['publication/js/libs/jquery.js',
+var jsLibs = ['publication/js/libs/imagesloaded.pkgd.min.js',
               'publication/js/libs/bootstrap.min.js',
               'publication/js/libs/velocity.min.js'
               ];

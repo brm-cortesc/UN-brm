@@ -11,21 +11,21 @@ jQuery(document).ready(function($) {
 
 	//Array de gifs
 	var gifs =[
-		['images/gif/pink/pink-1.gif','¡Invítala a ver esa película!'],
+		['images/gif/pink/pink-1.gif','¡Toma la iniciativa, invítalo a ver esa película!'],
 		['images/gif/pink/pink-2.gif','¡Invita a tu mejor amiga!'],
-		['images/gif/pink/pink-3.gif','Disfrútalo con...'],
-		['images/gif/pink/pink-4.gif','¡Ve con tus amigas!'],
-		['images/gif/pink/pink-5.gif','No bailes sola invita a alguien'],
+		['images/gif/pink/pink-3.gif','¡Dile sí a tus amigos y comparte este momento con ellos!'],
+		['images/gif/pink/pink-4.gif','¡Ve con tus amigas y cambia de look!'],
+		['images/gif/pink/pink-5.gif','¡Baila con tus broders!'],
 		['images/gif/pink/pink-6.gif','¡Compártelo con los dormilones!'],
-		['images/gif/pink/pink-7.gif','¿Con quién te tomarás la próxima foto?'],
-		['images/gif/pink/pink-8.gif','Invítalos a todos'],
-		['images/gif/pink/pink-9.gif','¡Invítalos a bailar!'],
-		['images/gif/pink/pink-10.gif','¿A quien invitarás a la película?'],
-		['images/gif/pink/pink-11.gif','Compartelo con tus amigos'],
-		['images/gif/pink/pink-12.gif','Comparte una tarde de placer'],
+		['images/gif/pink/pink-7.gif','¡Comparte una nueva selfie con tus amigas!'],
+		['images/gif/pink/pink-8.gif','¡Invita a todos tus amigos!'],
+		['images/gif/pink/pink-9.gif','¡Rompe la rutina y vive este momento con tus amigos!'],
+		['images/gif/pink/pink-10.gif','¿A quién invitarás a la película?'],
+		['images/gif/pink/pink-11.gif','¡Compártelo con tus amigos… incluso tu mascota!'],
+		['images/gif/pink/pink-12.gif','Las tardes en la playa se disfrutan más con amigos ¡Invítalos! '],
 		['images/gif/pink/pink-13.gif','¡Ve con tus amigas!'],
-		['images/gif/pink/pink-14.gif','¡Comparte una tarde de descanso!'],
-		['images/gif/pink/pink-15.gif','¡Anda con tu amiga de shopping!']
+		['images/gif/pink/pink-14.gif','¡Comparte con alguien una tarde de relax!'],
+		['images/gif/pink/pink-15.gif','¡Vive una tarde en el mall con tus amigas!']
 	];
 
 	var imgContainer = $('.img-gif img'),
@@ -35,13 +35,16 @@ jQuery(document).ready(function($) {
 	// Función para traer una imagen random
 
 	var cambiar = function () {
+		window.clearInterval(filler);
 		var max = gifs.length,
 		min = 0,
 		randNum;
 		do{
 			randNum = Math.floor(Math.random() * (max - min) + min);
 		}while(gifs[randNum] >= 0){
+
 			imgContainer.attr('src', gifs[randNum][0]);
+
 			txtContainer.text(gifs[randNum][1]);
 		};
 		
@@ -76,49 +79,59 @@ jQuery(document).ready(function($) {
 	    };
 	};
 
-	//dummy load
+	
+
+	//filler del helado cargador
+	var offset,
+		screenWidth = $(window).width(),
+		text = $('.percentage');
 
 	var filler = function () {
-		setInterval(function() {
-				//animacion de numero				
-			loader('#cpink', '.status .percentage', i );
 
-			if ( i == 100 ) {
-				$('.loader').addClass('hidden');
-				cambiar();
-				console.log(i)
-			}
-			
+		if (i <= 100){
+			loader('#cpink', '.status .percentage', i );
 			i++
-		}, 10);
+
+		}
+		if( i === 100 ){
+
+			i = 0
+			// cambiar();
+		}
+		else{
+			clearInterval(filler);
+		}
+
+
+		
 	};
+
+	//loader
 
 	var cargador = function () {
 
 		i = 0;
 		clearInterval(filler);
-		
-		imgContainer.attr('src', 'images/span.png');
-		$('.loader').removeClass('hidden');		
+
 
 		if (i <= 100) {
 
-			filler();			
+			setInterval(filler, 25);		
 
 		}else{
 
 
-			window.clearInterval(filler);
+			clearInterval(filler);
+
 			
 			loader('#cpink', '.status-pink .percentage', 0);
+
+			$('.loader').addClass('hidden');
 
 		};
 	};
 
-	//Loader de imagenes
-	var offset,
-		screenWidth = $(window).width(),
-		text = $('.percentage');
+
 
 	$('.btn').click(function(e) {
 		//se ejecuta al hacer click
@@ -127,7 +140,21 @@ jQuery(document).ready(function($) {
 
 		
 		if ( $(this).hasClass('btn-reload') ) {
-			cargador();
+			
+			imgContainer.attr('src', 'images/span.png');
+			clearInterval(filler);								
+			
+			$('.img-gif').imagesLoaded()
+				.progress(function (instance, image ) {
+					cargador();
+					$('.loader').removeClass('hidden');
+				})
+				.done(function () {							
+					clearInterval(filler);
+					cambiar();
+				});
+
+
 		}else if($(this).hasClass('btn-ver-black')) {
 			
 			$('body')
@@ -148,7 +175,19 @@ jQuery(document).ready(function($) {
 	});
 
 	//Traemos primera imagen
-	cargador();
+	cambiar();
+
+	$('.img-gif').imagesLoaded()
+		.progress(function (instance, image ) {
+			cargador();			
+			$('.loader').removeClass('hidden');
+		})
+		.done(function (instance) {
+
+			clearInterval(filler);
+			
+		});
+
 
 
 
