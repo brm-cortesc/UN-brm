@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Wed Oct 05 2016 17:49:38 GMT-0500 (COT)
+ Thu Oct 06 2016 17:57:21 GMT-0500 (COT)
  !*/
 ::selection {
   background: #fff;
@@ -521,7 +521,7 @@
   }
   .page-pink-black .col-compartir .btn svg {
     display: block;
-    height: auto;
+    height: 100%;
     margin: auto;
     max-width: 100%;
     position: initial;
@@ -556,8 +556,8 @@
   }
   .page-pink-black .row-btn .btn svg {
     display: inline-block;
-    margin-left: -2.5rem;
-    margin-right: 2.5rem;
+    margin-left: -1rem;
+    margin-right: 0.4rem;
     height: 4rem;
     width: 4rem;
   }
@@ -772,6 +772,7 @@
   .page-pink-black .col-compartir .btn-fb svg,
   .page-pink-black .col-compartir .btn-tw svg {
     left: 1.6rem;
+    height: 66%;
     position: absolute;
     top: 0.7rem;
   }
