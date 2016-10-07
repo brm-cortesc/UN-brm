@@ -1,0 +1,111 @@
+section.container-fluid
+	&:nth-of-type(1)
+		background-color $Morado
+		padding 0
+
+
+	&-sedentarismo
+		background-color $Morado
+		path('bg-sendetarismo.jpg')
+		background-position top center
+		color $Azul
+		text-align center
+		
+
+		.row
+			path('bg-txt-sedentarismo.png')
+			background-position center
+		
+.donaciones
+	input
+		display none
+
+.home-header
+	path('header.jpg')
+	background-repeat no-repeat
+	background-size cover
+	display flex
+	height 68rem
+	height 100vh
+	margin-top -11rem
+
+	
+	h1
+		color #fff
+		font-size 5rem
+		line-height 1.1
+		text-align center
+		text-shadow 0px 0px 10px rgba($Azul, 0.5)
+		text-transform uppercase
+		margin 0 auto
+		padding 22% 0
+		padding calc('100vh - 46rem' ) 0
+		width 100%
+		
+		strong
+			display block
+
+.logo
+	display inline-block
+	margin 0 auto
+	width 6.4rem
+	
+	img
+		height auto
+		width 100%
+		max-width 100%
+	
+
+.paso
+	background-color rgba(#323a81,0.8)
+	border-radius 100%
+	height 19.6rem
+	padding 4.6rem
+	text-align center
+	width 100%
+
+	svg
+		margin 0 auto
+		cuadrado(10rem)
+		
+.range
+	position relative
+	
+	.bar
+		background-color #fff
+		height 0.5rem
+		overflow hidden
+		position relative
+		width 100%
+		
+		.fill
+			background-color $Verde
+			height 100%
+			left 0
+			position absolute
+			top 0
+			width 25%
+			
+	.text
+		color $Verde
+		left 26%
+		position absolute
+		top -10%
+		
+
+.tweets
+	h3
+		color #fff
+		font-size 2rem
+		line-height 1.9
+		text-align center
+		
+		span
+			color $Verde
+			display block
+			
+			&.cantidad
+				font-size 3rem
+		
+
+			
