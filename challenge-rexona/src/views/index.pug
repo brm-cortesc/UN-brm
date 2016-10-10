@@ -13,12 +13,20 @@ block description
 
 block content
 	section.container-fluid
-		div.home-header
-
-			h1.text-slice
-				| haz parte del
-				strong #aerobicschallenge
-				| ¡ayuda con movimiento!
+		div.header.header-home
+			div.text-slice
+				h1
+					span.slice.slice-l
+						span
+							| haz parte del
+							strong #aerobicschallenge
+							| ¡ayuda con movimiento!
+					
+					span.slice.slice-r
+						span
+							| haz parte del
+							strong #aerobicschallenge
+							| ¡ayuda con movimiento!
 
 		div.row.row-pasos
 			//Moverse
@@ -62,7 +70,7 @@ block content
 				div.paso
 					include ../../publication/images/cursor.svg
 
-				p: a(href="#", target="_blank") Ingresa aquí
+				p: a.btn-ingresar(href="#", target="_blank") Ingresa aquí
 
 			///-Ingresar
 
@@ -80,9 +88,9 @@ block content
 		article.row
 			div.col-lg-10.col-md-10.col-sm-10.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
 				p.
-					El sedentarismo es un problema que afecta al mundo entero y Colombia es el país más sedentario de todos. De hecho 60% de las personas no incluyen ningún tipo actividad física en su rutina diaria. 
+					El <span>sedentarismo</span> es un problema que afecta al mundo entero y Colombia es el país más sedentario de todos. De hecho <mark>60% de las personas</mark> <span>no incluyen ningún tipo actividad física en su rutina diaria. </span>
 				p.
-					Por eso, Rexona ha decidido retar a las personas para que se muevan, vivan más y hagan que otros se muevan. Con el #AerobicsChallenge vamos a llevar donaciones a los niños de la Fundación Tiempo de Juego. 
+					Por eso, Rexona ha decidido retar a las personas para que se muevan, vivan más y hagan que otros se muevan. Con el <mark>#AerobicsChallenge</mark> vamos a llevar donaciones a los niños de la Fundación Tiempo de Juego. 
 
 	
 	section.container-fluid.container-contador
@@ -99,6 +107,7 @@ block content
 						div.bar
 							div.fill
 		
+						span 0
 			div.clearfix
 
 			article.col-lg-8.col-md-8.col-sm-8.col-xs-12
