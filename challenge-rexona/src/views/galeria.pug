@@ -1,0 +1,58 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	- var titulo = 'Galeria';
+	title #AEROBICSCHALLENGE - Rexona
+
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="#AEROBICSCHALLENGE Rexona" )
+
+block content
+	section.container-fluid
+		div.header.header-galeria
+
+			div.row
+				div.col-lg-10.col-md-10.col-sm-10.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+					h1 ¡mira cómo se mueven las personas para  brindar su apoyo!
+					
+					a.btn.btn-buscar(href="#buscar" role="button")
+						span.glyphicon.glyphicon-search
+
+						|  Buscar
+
+					form#buscar-input(method="")
+						input(type="text")
+
+					a.btn.btn-grid(href="#" role="button")
+						span.glyphicon.glyphicon-th
+
+						|  Reorganizar
+					
+					form#grid-range(method="")
+						input.control(type="range", min="1", steps="1", max="8")
+			
+
+		//- div.row
+
+	section.container-fluid.container-video
+		div.video-grid
+			-for(x = 0; x < 16; x++ )
+				div.container-video
+					button.btn.btn-play.glyphicon.glyphicon-play-circle(type="button")
+
+
+
+
+
+
+
+		
+
+	
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+
