@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Mon Oct 10 2016 23:33:33 GMT-0500 (COT)
+ Tue Oct 11 2016 01:19:16 GMT-0500 (COT)
  !*/
 ::selection {
   background: #1372ce;
@@ -507,7 +507,10 @@ section.container-fluid:nth-of-type(1) {
   transform: skewX(45deg);
 }
 .header .slice-l {
-  left: 0;
+  left: 11%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
   -o-transform: skewX(-45deg) translate3d(-44.3%, -2%, 0);
   -ms-transform: skewX(-45deg) translate3d(-44.3%, -2%, 0);
   -webkit-transform: skewX(-45deg) translate3d(-44.3%, -2%, 0);
@@ -522,7 +525,10 @@ section.container-fluid:nth-of-type(1) {
   transform: skewX(45deg) translateX(43.7%);
 }
 .header .slice-r {
-  right: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  right: 11%;
   -o-transform: skewX(-45deg) translate3d(55.7%, 2%, 0);
   -ms-transform: skewX(-45deg) translate3d(55.7%, 2%, 0);
   -webkit-transform: skewX(-45deg) translate3d(55.7%, 2%, 0);
@@ -708,6 +714,49 @@ section.container-fluid:nth-of-type(1) {
   -moz-object-fit: cover;
   -ms-object-fit: cover;
   -o-object-fit: cover;
+}
+.table-select {
+  background-color: #fff;
+  padding: 0.5rem;
+  max-width: 20rem;
+  overflow: hidden;
+}
+.table-select td {
+  border: 1px dotted #ccc;
+  height: 0.5rem;
+  width: 0.5rem;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+}
+.table-select td:hover::after {
+  background-color: #1372ce;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.table-select .table {
+  margin: 0;
+}
+.td-hover {
+  background-color: #1372ce;
+}
+.td-hover::after {
+  background-color: #1372ce;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 @media (max-width: 1230px) {
   .container-sedentarismo .row {

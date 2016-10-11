@@ -1,0 +1,40 @@
+.table-select
+	background-color white
+	padding 0.5rem
+	max-width 20rem
+	overflow hidden
+	td
+		border 1px dotted #ccc
+		cuadrado(0.5rem)
+		transitionBase(0.3s)
+		position relative
+		
+		&:hover
+		
+			&::after
+				background-color $Azul
+				content ""
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+				z-index 0
+			
+		
+		
+	.table
+		margin 0
+		
+.td-hover
+	background-color $Azul
+	
+	&::after
+		background-color $Azul
+		content ""
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+		z-index 0

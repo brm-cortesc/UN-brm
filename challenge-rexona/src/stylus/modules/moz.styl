@@ -1,0 +1,40 @@
+//Mozilla hacks
+			
+// _:-moz-tree-row(hover), .container-fluid:nth-of-type(1)::after
+// 	display none
+	
+// _:-moz-tree-row(hover), .container-fluid:nth-of-type(1)::before
+// 	display none
+
+_:-moz-tree-row(hover),
+	
+	& header
+		position absolute
+		width 100%
+		z-index 10
+		
+	// & .header .text-slice
+	// 	padding 45% 0 0%
+		
+
+
+//Media queries
+@media all and (-moz-images-in-menus:0) and (min-resolution: .001dpcm) and (max-width 768px)
+	.header 
+		&-home
+			height 50rem
+			
+		.text-slice
+			padding calc('100vh - 46rem') 0
+			
+
+
+
+@media all and (-moz-images-in-menus:0) and (min-resolution: .001dpcm) and (max-width 490px)
+	.header
+		&-home, &-galeria
+			margin-top -6rem
+			height 0
+			padding-bottom 100%
+		.text-slice
+			padding 19rem 0

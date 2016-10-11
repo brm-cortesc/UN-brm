@@ -32,7 +32,12 @@ block content
 
 						|  Reorganizar
 					
-					div.res
+					div.table-responsive.table-select
+						table.table
+							-for(x = 0; x <8; x++)
+								tr
+									-for(y = 0; y <8; y++)
+										td(data-grid="0")
 
 		//- div.row
 
@@ -43,11 +48,11 @@ block content
 				div.container-video
 					button.btn.btn-play.glyphicon.glyphicon-play-circle(type="button")
 
-					video(name="media" poster="https://scontent.cdninstagram.com/t51.2885-15/e15/14591022_1664652750511486_2198000044018237440_n.jpg?ig_cache_key=MTM1ODI1NzA5MTc1MjQ3NzY3MA%3D%3D.2").
+					video(id=x name="media" poster="https://scontent.cdninstagram.com/t51.2885-15/e15/14591022_1664652750511486_2198000044018237440_n.jpg?ig_cache_key=MTM1ODI1NzA5MTc1MjQ3NzY3MA%3D%3D.2").
 
 						<source src="https://scontent.cdninstagram.com/t50.2886-16/14641650_1778570135732204_941941707321114624_n.mp4" type="video/mp4"></video>
 
 	
 block Scripts
-	//-Acá se ponen js que solo vayan en ésta página
+	script(src="js/challenge-rexona.video.js")
 
