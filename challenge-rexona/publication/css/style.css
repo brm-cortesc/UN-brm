@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Mon Oct 10 2016 16:55:08 GMT-0500 (COT)
+ Mon Oct 10 2016 22:30:37 GMT-0500 (COT)
  !*/
 ::selection {
   background: #1372ce;
@@ -385,6 +385,7 @@ footer .redes-sociales .icon-yt {
 .btn-play {
   background-color: transparent;
   color: #fff;
+  cursor: pointer;
   display: block;
   font-size: 6rem;
   margin: 0 auto;
@@ -419,8 +420,11 @@ section.container-fluid:nth-of-type(1) {
   background-repeat: no-repeat;
   color: #1372ce;
   text-align: center;
-  padding-bottom: 8%;
-  padding-top: 8%;
+  padding-bottom: 12%;
+  padding-top: 12%;
+}
+.container-sedentarismo p {
+  line-height: 1.1;
 }
 .container-sedentarismo span {
   text-decoration: underline;
@@ -474,6 +478,11 @@ section.container-fluid:nth-of-type(1) {
   padding: -webkit-calc(100vh - 46rem);
   padding: -moz-calc(100vh - 46rem);
   padding: calc(100vh - 46rem) 0;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
   width: 42%;
 }
 .header .slice {
@@ -563,7 +572,6 @@ section.container-fluid:nth-of-type(1) {
   width: 19.6rem;
   padding: 4.6rem;
   text-align: center;
-  width: 100%;
 }
 .paso svg {
   margin: 0 auto;
@@ -683,6 +691,285 @@ section.container-fluid:nth-of-type(1) {
 }
 .video-grid .container-video:nth-of-type(even) {
   background-color: #1372ce;
+}
+.video-grid .container-video video {
+  height: auto;
+  width: 100%;
+}
+@media (max-width: 1230px) {
+  .container-sedentarismo .row {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+  }
+  .header .text-slice {
+    overflow: hidden;
+    width: 66rem;
+  }
+  .paso {
+    height: 0;
+    padding-bottom: 73.8%;
+    width: 100%;
+  }
+  .paso svg {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+@media (max-width: 1120px) {
+  .container-sedentarismo {
+    -webkit-background-size: 170%;
+    -moz-background-size: 170%;
+    background-size: 170%;
+  }
+  .container-sedentarismo .row {
+    padding: 10% 2rem;
+  }
+  .paso {
+    padding: 3.5rem;
+    padding-bottom: 77.7%;
+  }
+  .paso svg {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media (max-width: 945px) {
+  header {
+    background-position: 37% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  header .menu {
+    float: right;
+  }
+}
+@media (max-width: 900px) {
+  .container-sedentarismo .row {
+    font-size: 1.7rem;
+    padding: 10% 7rem;
+  }
+  .paso {
+    padding-bottom: 74.5%;
+  }
+  .paso svg {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+@media (max-width: 860px) {
+  .paso svg {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    -webkit-background-size: 230%;
+    -moz-background-size: 230%;
+    background-size: 230%;
+  }
+}
+@media (max-width: 768px) {
+  .header .text-slice {
+    padding: 25% 0 45%;
+  }
+  .header-home {
+    height: auto;
+  }
+  .paso {
+    margin: 0 auto;
+    padding-bottom: 39.8%;
+    max-width: 58%;
+  }
+}
+@media (max-width: 690px) {
+  header {
+    background-position: 32% 0;
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    background-size: 250%;
+  }
+  .container-sedentarismo {
+    -webkit-background-size: 140%;
+    -moz-background-size: 140%;
+    background-size: 140%;
+    padding-top: 9%;
+  }
+  .container-sedentarismo .row {
+    background: none;
+    font-size: 1.7rem;
+    padding: 4% 6.7rem;
+  }
+}
+@media (max-width: 660px) {
+  .container-sedentarismo .row {
+    padding: 4% 0.7rem;
+  }
+  .paso {
+    padding: 2.6rem;
+    padding-bottom: 42.8%;
+  }
+}
+@media (max-width: 620px) {
+  header {
+    -webkit-background-size: 380%;
+    -moz-background-size: 380%;
+    background-size: 380%;
+    height: 15rem;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header h1 strong {
+    font-size: 4rem;
+  }
+  .header .slice-l {
+    -o-transform: skewX(-45deg) translate3d(-43.8%, -2%, 0);
+    -ms-transform: skewX(-45deg) translate3d(-43.8%, -2%, 0);
+    -webkit-transform: skewX(-45deg) translate3d(-43.8%, -2%, 0);
+    -moz-transform: skewX(-45deg) translate3d(-43.8%, -2%, 0);
+    transform: skewX(-45deg) translate3d(-43.8%, -2%, 0);
+  }
+  .header .slice-r {
+    -o-transform: skewX(-45deg) translate3d(56.2%, 2%, 0);
+    -ms-transform: skewX(-45deg) translate3d(56.2%, 2%, 0);
+    -webkit-transform: skewX(-45deg) translate3d(56.2%, 2%, 0);
+    -moz-transform: skewX(-45deg) translate3d(56.2%, 2%, 0);
+    transform: skewX(-45deg) translate3d(56.2%, 2%, 0);
+  }
+}
+@media (max-width: 580px) {
+  header .col-xs-7 {
+    width: 75%;
+  }
+  header .col-xs-offset-2 {
+    margin-left: 0;
+  }
+  .container-sedentarismo .row {
+    font-size: 1.4rem;
+    padding: 4% 0;
+  }
+  .paso svg {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 530px) {
+  .paso svg {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-position: 30% 0;
+    -webkit-background-size: 580%;
+    -moz-background-size: 580%;
+    background-size: 580%;
+  }
+  header .menu {
+    float: none;
+  }
+  header .menu ul {
+    width: 100%;
+  }
+  header .menu ul li {
+    width: 31%;
+  }
+  header .menu ul li a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header h1 strong {
+    font-size: 3rem;
+  }
+  .header .text-slice {
+    padding: 30% 0 51%;
+  }
+  .paso {
+    padding: 2.4rem;
+    padding-bottom: 42.8%;
+    width: 60%;
+  }
+}
+@media (max-width: 460px) {
+  .container-sedentarismo {
+    -webkit-background-size: 160%;
+    -moz-background-size: 160%;
+    background-size: 160%;
+  }
+  .paso {
+    padding-bottom: 42%;
+  }
+  .paso svg {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+@media (max-width: 430px) {
+  header .menu ul li {
+    max-width: 49%;
+    width: 48%;
+  }
+  header .menu ul li:last-child {
+    display: none;
+  }
+  .container-sedentarismo {
+    -webkit-background-size: 200%;
+    -moz-background-size: 200%;
+    background-size: 200%;
+    padding-bottom: 17%;
+  }
+  .paso {
+    padding: 1.8rem;
+    padding-bottom: 42.2%;
+  }
+  .row-pasos p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .container-sedentarismo {
+    -webkit-background-size: 230%;
+    -moz-background-size: 230%;
+    background-size: 230%;
+    padding-bottom: 20%;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header h1 strong {
+    font-size: 2.5rem;
+  }
+  .paso svg {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+@media (max-width: 350px) {
+  .container-sedentarismo {
+    -webkit-background-size: 260%;
+    -moz-background-size: 260%;
+    background-size: 260%;
+    padding-bottom: 30%;
+  }
+  .paso {
+    max-width: 100%;
+    padding: 3.2rem;
+    padding-bottom: 64.9%;
+    width: 100%;
+  }
+  .row-pasos {
+    margin-top: -5rem;
+  }
+  .row-pasos p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

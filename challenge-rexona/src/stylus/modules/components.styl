@@ -9,9 +9,13 @@ section.container-fluid
 		background-repeat no-repeat
 		color $Azul
 		text-align center
-		padding-bottom 8%
+		padding-bottom 12%
 		padding-top @padding-bottom
 		
+		
+		p
+			line-height 1.1
+
 		span
 			text-decoration underline
 		
@@ -45,14 +49,11 @@ section.container-fluid
 		font-size 4rem
 		line-height 1.1
 		margin 0 auto
-		// max-width 100%
-		// padding 22% 0
-		// padding calc('100vh - 46rem' ) 0
 		position relative
 		text-align center
 		text-shadow 0px 0px 10px rgba($Azul, 0.5)
 		text-transform uppercase
-		// width 50%
+
 		
 		strong
 			display block
@@ -60,13 +61,13 @@ section.container-fluid
 			
 	.text-slice
 		// path('line-ppal.png')
-		// background-position center
+		// background-position 47% 50%
 		// background-repeat no-repeat
 		margin 0 auto
 		max-width 100%
-		// overflow hidden
 		padding 22% 0
 		padding calc('100vh - 46rem' ) 0
+		transitionBase(0.3s)
 		width 42%
 		
 	.slice
@@ -129,7 +130,7 @@ section.container-fluid
 	cuadrado(19.6rem)
 	padding 4.6rem
 	text-align center
-	width 100%
+	// width 100%
 	
 	svg
 		margin 0 auto
@@ -247,6 +248,10 @@ section.container-fluid
 		&:nth-of-type(even)
 			background-color $Azul
 			
+
+		video
+			height auto
+			width 100%
 
 
 
