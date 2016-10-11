@@ -1,7 +1,7 @@
 section.container-fluid
 	&:nth-of-type(1)
 		padding 0
-
+		
 .container
 	&-sedentarismo
 		path('bg-sedentarismo.jpg')
@@ -236,6 +236,7 @@ section.container-fluid
 		padding-bottom (100%/8)
 		position relative
 		text-align center
+		transitionBase(0.3s)
 		width (100%/8)
 		
 		&::after, &::before
@@ -252,7 +253,13 @@ section.container-fluid
 		video
 			height auto
 			width 100%
-
+			
+			&[poster]
+				object-fit cover
+				-webkit-object-fit cover
+				-moz-object-fit cover
+				-ms-object-fit cover
+				-o-object-fit cover
 
 
 

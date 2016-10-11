@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Mon Oct 10 2016 22:30:37 GMT-0500 (COT)
+ Mon Oct 10 2016 23:33:33 GMT-0500 (COT)
  !*/
 ::selection {
   background: #1372ce;
@@ -400,6 +400,7 @@ footer .redes-sociales .icon-yt {
   top: 0;
   left: 25%;
   width: 50%;
+  z-index: 10;
 }
 .btn-play:active,
 .btn-play:focus,
@@ -679,6 +680,11 @@ section.container-fluid:nth-of-type(1) {
   padding-bottom: 12.5%;
   position: relative;
   text-align: center;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
   width: 12.5%;
 }
 .video-grid .container-video::after,
@@ -695,6 +701,13 @@ section.container-fluid:nth-of-type(1) {
 .video-grid .container-video video {
   height: auto;
   width: 100%;
+}
+.video-grid .container-video video[poster] {
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
 }
 @media (max-width: 1230px) {
   .container-sedentarismo .row {
@@ -783,6 +796,10 @@ section.container-fluid:nth-of-type(1) {
     padding-bottom: 39.8%;
     max-width: 58%;
   }
+  .video-grid .container-video {
+    padding-bottom: 25%;
+    width: 25%;
+  }
 }
 @media (max-width: 690px) {
   header {
@@ -854,6 +871,10 @@ section.container-fluid:nth-of-type(1) {
   .paso svg {
     height: 5rem;
     width: 5rem;
+  }
+  .video-grid .container-video {
+    padding-bottom: 50%;
+    width: 50%;
   }
 }
 @media (max-width: 530px) {
@@ -932,6 +953,10 @@ section.container-fluid:nth-of-type(1) {
   .row-pasos p {
     font-size: 1.3rem;
   }
+  .video-grid .container-video {
+    padding-bottom: 100%;
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .container-sedentarismo {
@@ -969,6 +994,35 @@ section.container-fluid:nth-of-type(1) {
   }
   .row-pasos p {
     font-size: 1rem;
+  }
+}
+_:-moz-tree-row(hover),
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+@media all and (-moz-images-in-menus: 0) and (min-resolution: 0.001dpcm) and (max-width: 768px) {
+  .header-home {
+    height: 50rem;
+  }
+  .header .text-slice {
+    padding: -o-calc(100vh - 46rem);
+    padding: -ms-calc(100vh - 46rem);
+    padding: -webkit-calc(100vh - 46rem);
+    padding: -moz-calc(100vh - 46rem);
+    padding: calc(100vh - 46rem) 0;
+  }
+}
+@media all and (-moz-images-in-menus: 0) and (min-resolution: 0.001dpcm) and (max-width: 490px) {
+  .header-home,
+  .header-galeria {
+    margin-top: -6rem;
+    height: 0;
+    padding-bottom: 100%;
+  }
+  .header .text-slice {
+    padding: 19rem 0;
   }
 }
 
