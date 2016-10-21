@@ -39,11 +39,17 @@
       <div class="header header-galeria">
         <div class="row">
           <div class="col-lg-10 col-md-10 col-sm-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-            <h1>¡mira cómo se mueven las personas para  brindar su apoyo!</h1><a class="btn btn-buscar" href="#buscar" role="button"><span class="glyphicon glyphicon-search"></span> Buscar</a>
-            <form id="buscar-input" method="">
-              <input type="text">
-            </form><a class="btn btn-grid" href="#" role="button"><span class="glyphicon glyphicon-th"></span> Reorganizar</a>
-            <div class="table-responsive table-select">
+            <h1>¡mira cómo se mueven las personas para  brindar su apoyo!</h1><a class="btn btn-buscar" href="#buscar" role="button"><span class="glyphicon glyphicon-search"></span> Buscar</a><a class="btn btn-grid" href="#" role="button"><span class="glyphicon glyphicon-th"></span> Reorganizar</a>
+            <div class="clearfix"></div>
+            <form class="col-lg-6 col-lg-offset-3" id="search-user">
+              <label for="buscar"><span class="glyphicon glyphicon-search"></span></label>
+              <input name="buscar" id="buscar" type="text" placeholder="@RexonaMDA">
+            </form>
+            <div class="table-responsive table-select-grid">
+              <div class="range-select">
+                <input id="select-grid" name="grid" type="range" min="0" max="16" steps="1" value="16">
+                <output for="grid"></output>
+              </div>
               <table class="table">
                 <tr>
                   <td data-grid="0"></td>
@@ -260,6 +266,19 @@
             
             
           </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="pagination">
+          <ol>
+            <li><a class="previous" href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a class="next" href="#">&raquo;</a></li>
+          </ol>
         </div>
       </div>
     </section>

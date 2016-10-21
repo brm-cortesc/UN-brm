@@ -1,10 +1,11 @@
 section.container-fluid
 	&:nth-of-type(1)
+		background-color $Morado
 		padding 0
 		
 .container
 	&-sedentarismo
-		path('bg-sedentarismo.jpg')
+		path('bg-sedentarismo.png')
 		background-position top center
 		background-repeat no-repeat
 		color $Azul
@@ -14,7 +15,11 @@ section.container-fluid
 		
 		
 		p
+			color #000
 			line-height 1.1
+			
+			em
+				color $Morado
 
 		span
 			text-decoration underline
@@ -36,6 +41,10 @@ section.container-fluid
 	margin 4rem auto
 	input
 		display none
+		
+
+
+
 
 .header
 	&-home, &-galeria
@@ -56,8 +65,15 @@ section.container-fluid
 
 		
 		strong
+			color $Cyan
 			display block
 			font-size 5rem
+			
+	h2
+		color #fff
+		position relative
+		top 25%
+
 			
 	.text-slice
 		// path('line-ppal.png')
@@ -111,8 +127,8 @@ section.container-fluid
 		h1 
 			margin-bottom 2rem
 		
-		form
-			display none
+		// form
+		// 	display none
 		
 
 .logo
@@ -158,7 +174,7 @@ section.container-fluid
 		left 0
 		
 	&::before
-		background-color #fff
+		background-color #000
 		right 0
 		
 	
@@ -167,7 +183,7 @@ section.container-fluid
 		font-size 1.6rem
 	
 	.bar
-		background-color #fff
+		background-color #000
 		height 0.5rem
 		overflow hidden
 		position relative
@@ -183,16 +199,17 @@ section.container-fluid
 			
 	.text
 		bottom 0
-		color $Verde
+		color $Morado
 		font-size 2rem
-		left 26%
+		left 27%
 		line-height 1
 		max-width 8rem
 		padding-left 2.6rem
 		position absolute
+		text-transform uppercase
 		
 		&::before
-			background-color #fff
+			background-color $Morado
 			content ''
 			height 0.1rem
 			margin-left -0.5rem
@@ -201,12 +218,17 @@ section.container-fluid
 			transform rotate(140deg)
 			transform-origin 0 50%
 			width 100%
+			
+		.numero
+			display block
+			font-size 4rem
+			
 		
 
 
 .tweets
 	h3
-		color #fff
+		color $Verde
 		font-size 2rem
 		line-height 1.2
 		text-align center
@@ -216,10 +238,11 @@ section.container-fluid
 			height auto
 			max-width 3.6rem		
 		span
-			color $Verde
+			color #666
 			display block
 			
 			&.cantidad
+				color #000
 				font-size 4rem
 				
 
@@ -233,6 +256,7 @@ section.container-fluid
 		display table
 	
 	.container-video
+		path('pattern.jpg')
 		float left
 		height 0
 		padding-bottom (100%/8)
@@ -246,10 +270,16 @@ section.container-fluid
 			display table
 
 		&:nth-of-type(odd)
-			background-color $Morado
+			background-color #fff
 			
 		&:nth-of-type(even)
-			background-color $Azul
+			background-color #333
+			
+		// &:nth-child(n+2)
+		// 	background-color #333
+			
+		// 	&:nth-child(-n+3)
+		// 		background-color #fff
 			
 
 		video

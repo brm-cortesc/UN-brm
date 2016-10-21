@@ -69,14 +69,35 @@
 		.text-slice
 			padding 25% 0 45%
 			
+		&-galeria
+			h1
+				margin 5rem auto 6rem
 		&-home
 			height auto
 			
+			
 	.paso
 		margin 0 auto
-		padding-bottom 39.8%
-		max-width 58%
+		padding 4.5rem
+		padding-bottom 35.4%
+		max-width 50%
+		
+		svg
+			cuadrado(8rem)
+		
+
+	.row-pasos
+		& > div:nth-child(2)
+			margin-bottom 6rem
+	
+	.table-select-grid
+		position relative
+
+		.table
+			display none
 			
+		.range-select
+			display block
 
 	.video-grid
 		.container-video
@@ -107,8 +128,11 @@
 				padding 4% 0.7rem
 				
 	.paso
-		padding 2.6rem
-		padding-bottom 42.8%
+		padding 3.4rem
+		padding-bottom 37.2%
+		
+		svg
+			cuadrado(7rem)
 		
 	
 
@@ -164,7 +188,7 @@
 @media (max-width 530px)
 	.paso
 		svg
-			cuadrado(4rem)
+			cuadrado(6rem)
 
 
 @media (max-width 500px)
@@ -194,19 +218,22 @@
 			
 	.paso
 		padding 2.4rem
-		padding-bottom 42.8%
+		padding-bottom 38.8%
 		width 60%
+		
+	.table-select-grid
+		right 15%
 
 @media (max-width 460px)
 	.container
 		&-sedentarismo
 			background-size 160%
 			
-	.paso
-		padding-bottom 42%
+	// .paso
+	// 	padding-bottom 42%
 		
-		svg
-			cuadrado(3.5rem)
+	// 	svg
+	// 		cuadrado(3.5rem)
 
 
 @media (max-width 430px)
@@ -227,9 +254,10 @@
 			
 	.paso
 		padding 1.8rem
-		padding-bottom 42.2%
+		padding-bottom 37.2%
 		
 	.row-pasos
+		margin-top -5rem
 		p
 			font-size 1.3rem
 			
@@ -254,7 +282,7 @@
 	.paso
 		
 		svg
-			cuadrado(3rem)
+			cuadrado(4rem)
 			
 @media (max-width 350px)
 	.container
@@ -266,11 +294,9 @@
 	.paso
 		max-width 100%
 		padding 3.2rem
-		padding-bottom 64.9%
-		width 100%
+		padding-bottom 58.1%
+		width 80%
 	
 	.row-pasos
 		margin-top -5rem
-		
-		p
-			font-size 1rem
+

@@ -24,20 +24,34 @@ block content
 
 						|  Buscar
 
-					form#buscar-input(method="")
-						input(type="text")
 
 					a.btn.btn-grid(href="#" role="button")
 						span.glyphicon.glyphicon-th
 
 						|  Reorganizar
 					
-					div.table-responsive.table-select
+
+					div.clearfix
+
+					
+					form#search-user.col-lg-6.col-lg-offset-3
+						label(for="buscar")
+							span.glyphicon.glyphicon-search
+						input(name="buscar", id="buscar", type="text", placeholder="@RexonaMDA")
+
+			
+				
+					div.table-responsive.table-select-grid
+						div.range-select
+							input( id="select-grid", name="grid", type="range", min="0", max="16", steps="1", value="16" )
+							output(for="grid")
+
 						table.table
 							-for(x = 0; x <8; x++)
 								tr
 									-for(y = 0; y <8; y++)
 										td(data-grid="0")
+
 
 		//- div.row
 
@@ -51,6 +65,19 @@ block content
 					video(id=x name="media" poster="https://scontent.cdninstagram.com/t51.2885-15/e15/14591022_1664652750511486_2198000044018237440_n.jpg?ig_cache_key=MTM1ODI1NzA5MTc1MjQ3NzY3MA%3D%3D.2").
 
 						<source src="https://scontent.cdninstagram.com/t50.2886-16/14641650_1778570135732204_941941707321114624_n.mp4" type="video/mp4"></video>
+
+		
+		div.row
+			div.pagination
+				ol
+					li
+						a(href="#" class="previous") &laquo;
+					-for(x = 1; x < 6; x++ )
+						li
+							a(href="#") #{x}
+
+					li
+						a(href="#" class="next") &raquo;
 
 	
 block Scripts
