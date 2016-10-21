@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Fri Oct 21 2016 15:23:22 GMT-0500 (COT)
+ Fri Oct 21 2016 15:40:12 GMT-0500 (COT)
  !*/
 ::selection {
   background: #1372ce;
@@ -742,6 +742,9 @@ section.container-fluid:nth-of-type(1) {
   -ms-object-fit: cover;
   -o-object-fit: cover;
 }
+.video-grid ~ .row {
+  clear: both;
+}
 .table-select-grid {
   background-color: #fff;
   bottom: -70%;
@@ -926,6 +929,7 @@ section.container-fluid:nth-of-type(1) {
 }
 .pagination {
   display: block;
+  clear: both;
   margin: 1rem auto;
   max-width: 60rem;
   text-align: center;
@@ -933,9 +937,24 @@ section.container-fluid:nth-of-type(1) {
 .pagination ol {
   list-style-type: none;
   padding: 0;
+  margin: 2rem 0;
 }
 .pagination ol li {
-  display: inline;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.pagination ol li a {
+  background-color: #000;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 1.5rem;
+}
+.pagination ol li a:hover {
+  background-color: #2d1d5a;
+  text-decoration: none;
 }
 @media (max-width: 1230px) {
   .container-sedentarismo .row {
@@ -1188,11 +1207,19 @@ section.container-fluid:nth-of-type(1) {
   header .menu ul li:last-child {
     display: none;
   }
+  .btn-buscar,
+  .btn-grid {
+    font-size: 1.6rem;
+    margin: 2rem 1rem;
+  }
   .container-sedentarismo {
     -webkit-background-size: 200%;
     -moz-background-size: 200%;
     background-size: 200%;
     padding-bottom: 17%;
+  }
+  .pagination ol li a {
+    padding: 1rem;
   }
   .paso {
     padding: 1.8rem;

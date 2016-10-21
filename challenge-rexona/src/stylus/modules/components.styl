@@ -251,6 +251,7 @@ section.container-fluid
 	position relative
 	
 	
+	
 	&::after, &::before
 		content " "
 		display table
@@ -292,6 +293,10 @@ section.container-fluid
 				-moz-object-fit cover
 				-ms-object-fit cover
 				-o-object-fit cover
+				
+
+	& ~ .row
+		clear both
 
 
 
