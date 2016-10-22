@@ -4,12 +4,12 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	- var titulo = 'Galeria';
-	title #AEROBICSCHALLENGE - Rexona
+	title #RETOAMOVERSE - Rexona
 
 
 //-Etiqueta Metadescription
 block description
-	meta(name="description", content="#AEROBICSCHALLENGE Rexona" )
+	meta(name="description", content="#RETOAMOVERSE Rexona" )
 
 block content
 	section.container-fluid
@@ -19,13 +19,13 @@ block content
 				div.col-lg-10.col-md-10.col-sm-10.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
 					h1 ¡mira cómo se mueven las personas para  brindar su apoyo!
 					
-					a.btn.btn-buscar(href="#buscar" role="button")
+					a#Buscar.btn.btn-buscar(href="#Buscar" role="button")
 						span.glyphicon.glyphicon-search
 
 						|  Buscar
 
 
-					a.btn.btn-grid(href="#" role="button")
+					a#grid.btn.btn-grid(href="#grid" role="button")
 						span.glyphicon.glyphicon-th
 
 						|  Reorganizar
@@ -34,7 +34,7 @@ block content
 					div.clearfix
 
 					
-					form#search-user.col-lg-6.col-lg-offset-3
+					form#search-user.col-lg-4.col-md-6.col-sm-6.col-xs-12.col-lg-offset-4.col-md-offset-3.col-sm-offset-3
 						label(for="buscar")
 							span.glyphicon.glyphicon-search
 						input(name="buscar", id="buscar", type="text", placeholder="@RexonaMDA")
@@ -43,13 +43,13 @@ block content
 				
 					div.table-responsive.table-select-grid
 						div.range-select
-							input( id="select-grid", name="grid", type="range", min="0", max="16", steps="1", value="16" )
-							output(for="grid")
+							output(for="grid") 1 x 1
+							input( id="select-grid", name="select-grid", type="range", min="1", max="4", steps="1", value="1" )
 
 						table.table
-							-for(x = 0; x <8; x++)
+							-for(x = 0; x <1; x++)
 								tr
-									-for(y = 0; y <8; y++)
+									-for(y = 0; y <1; y++)
 										td(data-grid="0")
 
 
@@ -59,7 +59,7 @@ block content
 		div.video-grid
 			
 			-for(x = 0; x < 16; x++ )
-				div.container-video
+				div.video-grid-item
 					button.btn.btn-play.glyphicon.glyphicon-play-circle(type="button")
 
 					video(id=x name="media" poster="https://scontent.cdninstagram.com/t51.2885-15/e15/14591022_1664652750511486_2198000044018237440_n.jpg?ig_cache_key=MTM1ODI1NzA5MTc1MjQ3NzY3MA%3D%3D.2").
@@ -72,7 +72,10 @@ block content
 				ol
 					li
 						a(href="#" class="previous") &laquo;
-					-for(x = 1; x < 6; x++ )
+
+					li.active
+						a(href="#") 1
+					-for(x = 2; x < 5; x++ )
 						li
 							a(href="#") #{x}
 

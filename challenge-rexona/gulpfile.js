@@ -30,9 +30,9 @@ var banner = ['/*!',
 ].join('\n');
 
 //arreglo concatenar JS en el orden en el que se cargan
-var jsLibs = ['publication/js/libs/imagesloaded.pkgd.min.js',
-              'publication/js/libs/bootstrap.min.js',
-              'publication/js/libs/velocity.min.js'
+var jsLibs = ['publication/js/libs/jquery.js',
+              'publication/js/libs/velocity.min.js',
+              'publication/js/libs/bootstrap.min.js'
               ];
 
 
@@ -117,7 +117,7 @@ gulp.task('watch', ['browserSync', 'views', 'css'], function (){
 
   gulp.watch('src/stylus/**/*.styl',  ['css']);
   gulp.watch(['src/views/*.pug', 'src/templates/**/*.pug'],  ['views']);
-  gulp.watch('publication/js/**/*.js', browserSync.reload);
+  gulp.watch('publication/**/*.js', browserSync.reload);
   gulp.watch('publication/images/**/*.{gif,svg,jpg,png}', browserSync.reload);
   gulp.watch('publication/fonts/**/*.{svg,eot,ttf,woff,woff2}', browserSync.reload);
 
