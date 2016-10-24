@@ -90,7 +90,7 @@ gulp.task('views', function() {
   .pipe(pug({
     pretty: true
     }))
-  .pipe(gulp.dest('./publication'))
+  .pipe(gulp.dest('./publication/templates'))
   .pipe(browserSync.reload({
       stream: true
     }))
@@ -113,12 +113,12 @@ gulp.task('limpiar', function (done) {
 
 
 //tarea que observa cambios para recargar el navegador
-gulp.task('watch', ['browserSync', 'views', 'css'], function (){
+gulp.task('watch', ['views', 'css'], function (){
 
   gulp.watch('src/stylus/**/*.styl',  ['css']);
   gulp.watch(['src/views/*.pug', 'src/templates/**/*.pug'],  ['views']);
-  gulp.watch('publication/js/**/*.js', browserSync.reload);
-  gulp.watch('publication/images/**/*.{gif,svg,jpg,png}', browserSync.reload);
-  gulp.watch('publication/fonts/**/*.{svg,eot,ttf,woff,woff2}', browserSync.reload);
+  // gulp.watch('publication/js/**/*.js', browserSync.reload);
+  // gulp.watch('publication/images/**/*.{gif,svg,jpg,png}', browserSync.reload);
+  // gulp.watch('publication/fonts/**/*.{svg,eot,ttf,woff,woff2}', browserSync.reload);
 
 });
