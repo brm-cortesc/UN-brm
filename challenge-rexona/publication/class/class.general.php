@@ -58,6 +58,40 @@
                     }
                 }
             }
+            //escribe en archivo los dtos de instagram
+            $this->jsonFile();
+        }
+        //escribe la info en un archivo
+        public function jsonFile(){
+            $insta = DB_DataObject::Factory('Rexr_instagram');
+            DB_DataObject::debugLevel(0);
+            $insta->find();
+            $dataInsta=[];
+            $i=0;
+            while($insta->fetch()){
+                $dataInsta[$i]['low_resolution']=$insta->low_resolution ;
+                $dataInsta[$i]['count']=$insta->count ;
+                $dataInsta[$i]['link']=$insta->link ;
+                $dataInsta[$i]['tags']=$insta->tags ;
+                $dataInsta[$i]['likes']=$insta->likes ;
+                $dataInsta[$i]['img_low_resolution']=$insta->img_low_resolution ;
+                $dataInsta[$i]['text']=$insta->text ;
+                $dataInsta[$i]['username']=$insta->username ;
+                $dataInsta[$i]['profile_picture']=$insta->profile_picture ;
+                $dataInsta[$i]['insta_id']=$insta->insta_id ;
+                $i++;
+            }
+            printVar($dataInsta,'arreglo de datos instagram');
+            $insta->free();
+            $fp = fopen('results/d.json', 'w');
+            fwrite($fp, json_encode($dataInsta));
+            fclose($fp);
+
+        }
+        //trae la info del contador
+        public function getContador(){
+            $insta = DB_DataObject::Factory('Rexr_instagram');
+            DB_DataObject::debugLevel(0);
         }
     }
 ?>
