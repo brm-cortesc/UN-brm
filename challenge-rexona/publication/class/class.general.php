@@ -81,7 +81,7 @@
                 $dataInsta[$i]['insta_id']=$insta->insta_id ;
                 $i++;
             }
-            printVar($dataInsta,'arreglo de datos instagram');
+            //printVar($dataInsta,'arreglo de datos instagram');
             $insta->free();
             $fp = fopen('results/d.json', 'w');
             fwrite($fp, json_encode($dataInsta));

@@ -3,6 +3,6 @@
    // error_reporting(E_ALL);
     require 'db/requires.php';
     $general = new General();
-    $general->llamaDatos();
+    //$general->llamaDatos();
     $smarty->display('galeria.html');
 ?>
