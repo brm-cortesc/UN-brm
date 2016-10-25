@@ -1,0 +1,7 @@
+gulpfile.js
+libs.min.js
+node_modules/
+db/
+PEAR/
+Smarty/
+templates_c/

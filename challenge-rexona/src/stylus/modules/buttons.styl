@@ -7,8 +7,21 @@
 	text-transform uppercase
 	transitionBase(0.3s)
 	
+	&-active
+		background-color $Morado !important
+		color #fff !important
+		pointer-events none
+		outline none !important
+	
 	&-buscar, &-grid
+		background-color #000
+		color #fff
 		font-size 2rem
+		margin 2rem
+		max-width 48%
+		
+		span
+			color $Cyan
 		
 		&:hover, &:active
 			background-color darken($Morado, 20%)

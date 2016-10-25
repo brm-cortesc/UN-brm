@@ -1,0 +1,38 @@
+.pagination
+	display block
+	clear both
+	margin 1rem auto
+	max-width 60rem
+	text-align center
+	
+	ol
+		list-style-type none
+		padding 0
+		margin 2rem 0
+		
+		
+		li
+			display inline-block
+			margin 0
+			padding 0
+			
+			a
+				background-color #000
+				border-left 1px solid #fff
+				border-right @border-left
+				color #fff
+				font-size 1.8rem
+				padding 1rem 1.5rem
+				
+				&:hover
+					background-color $Morado
+					text-decoration none
+			
+
+			&.active
+				
+				a
+					background-color $Cyan
+					color #000
+					pointer-events none
+					text-decoration none

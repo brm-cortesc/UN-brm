@@ -4,12 +4,12 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	- var titulo = 'Home';
-	title #AEROBICSCHALLENGE - Rexona
+	title #RETOAMOVERSE - Rexona
 
 
 //-Etiqueta Metadescription
 block description
-	meta(name="description", content="#AEROBICSCHALLENGE Rexona" )
+	meta(name="description", content="#RETOAMOVERSE Rexona" )
 
 block content
 	section.container-fluid
@@ -19,68 +19,61 @@ block content
 					span.slice.slice-l
 						span
 							| haz parte del
-							strong #aerobicschallenge
+							strong #retoamoverse
 							| ¡ayuda con movimiento!
 					
 					span.slice.slice-r
 						span
 							| haz parte del
-							strong #aerobicschallenge
+							strong #retoamoverse
 							| ¡ayuda con movimiento!
 
+				h2.text-center entre más te mueves, más ayudas
+
+
 		div.row.row-pasos
-			//Moverse
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
-				div.paso
-					include ../../publication/images/mover.svg
-
-				p Decídete a moverte más por una buena causa
-
-			///-Moverse
-			
 			//Grabar video
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-6.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
 				div.paso
 					include ../../publication/images/grabar-video.svg
 
-				p Graba un video donde hagas 6 aeróbicos
+				p
+					| Crea un video haciendo 10 aeróbicos y súbelo a tus redes sociales usando 
+					strong #RetoASaltar
+
 			///-Grabar video
-			
 			//Compartir
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-6
 				div.paso
 					include ../../publication/images/compartir.svg
 
-				p Comparte tu video en redes sociales y reta a 3 amigos
+				p Reta a tus amigos a hacer lo mismo
 
 			///-Compartir
-			
-			//Elegir
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
-				div.paso
-					include ../../publication/images/check.svg
-
-				p Elige qué quieres donar
-
-			///-Elegir
-
-			//Ingresar
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
-
-				div.paso
-					include ../../publication/images/cursor.svg
-
-				p: a.btn-ingresar(href="#", target="_blank") Ingresa aquí
-
-			///-Ingresar
 
 			//Listo
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-4
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-6
 				div.paso
 					include ../../publication/images/smile.svg
 
-				p ¡Y listo! Habrás hecho tu aporte. 
-			///-Listo
+				p
+					| Apoya a la 
+					strong Fundación Tiempo de Juego
+					|  que promueve el deporte para niños
+
+			///-Listo			
+			
+			
+			//Elegir
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-6
+				div.paso
+					include ../../publication/images/check.svg
+
+				p Escoge el artículo que quieras donar y envíalo a la Calle 45 N° 8-31 Este, Barrio Las Quintas, Comuna 4 (Soacha)
+
+
+			///-Elegir
+
 		
 
 	section.container-fluid.container-sedentarismo
@@ -90,7 +83,7 @@ block content
 				p.
 					El <span>sedentarismo</span> es un problema que afecta al mundo entero y Colombia es el país más sedentario de todos. De hecho <mark>60% de las personas</mark> <span>no incluyen ningún tipo actividad física en su rutina diaria. </span>
 				p.
-					Por eso, Rexona ha decidido retar a las personas para que se muevan, vivan más y hagan que otros se muevan. Con el <mark>#AerobicsChallenge</mark> vamos a llevar donaciones a los niños de la Fundación Tiempo de Juego. 
+					Por eso, Rexona ha decidido retar a las personas para que se muevan, vivan más y hagan que otros se muevan. Con el <mark>#AerobicsChallenge</mark> vamos a llevar donaciones a los niños de la <em>Fundación Tiempo de Juego</em>. 
 
 	
 	section.container-fluid.container-contador
@@ -100,10 +93,12 @@ block content
 			
 			div.col-lg-10.col-lg-offset-1
 				div.donaciones
-					input#get-donaciones(type="range", step="1" min="0" value="25")
+					//- input#get-donaciones(type="range", step="1" min="0" value="30")
 
 					div.range
-						p.text 25 unidades
+						p.text
+							span.numero 25
+							| unidades
 						div.bar
 							div.fill
 		
@@ -113,14 +108,16 @@ block content
 			article.col-lg-8.col-md-8.col-sm-8.col-xs-12
 				h3.text-center Elige tu donación
 
-				iframe(src="", frameborder="0")
+				div.embed-responsive.embed-responsive-16by9
+
+				//- iframe.embed-responsive-item(src="", frameborder="0")
 
 			aside.col-lg-4.col-md-4.col-sm-4.hidden-xs
 				div.tweets
 					h3
 						+image('twitter.svg')
 						span.cantidad 9999999
-						| #AerobicsChallenge
+						| #retoamoverse
 						span en Twitter:
 
 				div.feed.
