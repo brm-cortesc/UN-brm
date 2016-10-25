@@ -4,7 +4,7 @@
   @link https://github.com/cortesc/HTML
   @link Cristian Cortés - cristian.cortes@brm.com.co
   @license 
- Fri Oct 21 2016 20:25:52 GMT-0500 (COT)
+ Mon Oct 24 2016 21:41:54 GMT-0500 (COT)
  !*/
 ::selection {
   background: #1372ce;
@@ -1129,6 +1129,9 @@ section.container-fluid:nth-of-type(1) {
   }
 }
 @media (max-width: 660px) {
+  .col-productos .col-xs-4 {
+    width: 50%;
+  }
   .container-sedentarismo .row {
     padding: 4% 0.7rem;
   }
@@ -1190,6 +1193,14 @@ section.container-fluid:nth-of-type(1) {
   }
 }
 @media (max-width: 530px) {
+  .col-productos {
+    margin-bottom: 1rem;
+  }
+  .col-productos .col-xs-4 {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
   .paso svg {
     height: 6rem;
     width: 6rem;
